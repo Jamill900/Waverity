@@ -1,0 +1,25 @@
+<div class="main">
+    <div class="section-head container-md wow animate__fadeInDown animate__animated">
+        <h2>Careers</h2>
+        <div class="hr"></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl nullam nisl ullamcorper volutpat amet ac.
+            Volutpat, ultricies molestie ut pharetra id est feugiat hendrerit.
+        </p>
+    </div>
+
+    <!-- Vacancies -->
+
+    <div class="container row vacancies">
+        <div class="vacancy col-lg-3 col-md-4 col-sm-12" style="--animation-order: {{ data.id }}" *ngFor="let data of careers">
+            <div class="details">
+                <h3>{{ data.name }}</h3>
+                <h4>{{ data.location }}</h4>
+            </div>
+            <button type="button"><a href="{{ data.link }}" target="_blank">View Details</a></button>
+            <div *ngIf="isVacancyDetailsVisible">
+
+            </div>
+        </div>
+    </div>
+</div>

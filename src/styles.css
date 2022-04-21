@@ -1,0 +1,260 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "~animate.css/animate.css";
+@import "~ngx-tabset/ngx-tabset";
+
+:root {
+	--dark: #030303;
+	--white: #ffffff;
+	--blue: #ff5500;
+}
+
+* {
+	font-family: "Poppins";
+	font-size: 1em;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+.tech_p {
+	padding-bottom: 40px;
+}
+
+nav {
+	background: var(--dark) !important;
+	border-color: var(--blue) !important;
+}
+
+body {
+	background-color: var(--dark);
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	background: rgba(0, 0, 0, 0.7);
+	overflow-x: hidden;
+	/* background-image: url("assets/images/bg_all.svg");
+	background-size: cover;
+	background-repeat: no-repeat; */
+}
+
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+	filter: brightness(65%);
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+section {
+	min-height: 100vh;
+	scroll-snap-align: start;
+}
+
+.section>h1 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 400;
+	letter-spacing: 0.2em;
+	padding-top: 100px;
+}
+
+.section>.hr {
+	margin: 10px auto 20px auto;
+	width: 50px;
+	border: 2px solid var(--blue);
+	filter: drop-shadow(0 0 0 var(--blue));
+	border-radius: 20px;
+}
+
+.section>p {
+	text-align: center;
+	max-width: 850px;
+	font-weight: 300;
+	margin: 20px auto;
+	letter-spacing: 0.1em;
+}
+
+.section>button {
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 3px 15px 3px 15px;
+	padding: 20px 55px;
+	background: rgba(72, 72, 72, 0.7) !important;
+	backdrop-filter: blur(3px) !important;
+	border: none;
+	color: rgba(255, 255, 255, 0.8);
+	outline: none;
+	cursor: pointer;
+}
+
+.section>button:hover {
+	color: var(--dark);
+	background: var(--white);
+	transition-duration: 300ms;
+}
+
+.container {
+	max-width: 1300px;
+	margin: auto;
+}
+
+.section-head {
+	text-align: center;
+	/*animation: heading 1s ease forwards;*/
+}
+
+.section-head>.hr {
+	margin: 10px auto 0 auto;
+	width: 50px;
+	border: 2px solid var(--blue);
+	filter: drop-shadow(0 0 0 var(--blue));
+	border-radius: 20px;
+}
+
+.section-head>h2 {
+	padding-top: 150px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 0.2em;
+}
+
+.section-head>p {
+	margin: auto;
+	padding: 30px 0 30px 0;
+	max-width: 900px;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 23px;
+	letter-spacing: 1.5px;
+}
+
+@keyframes heading {
+	0% {
+		transform: translateY(-50px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #303030;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #121212;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.main {
+	opacity: 0;
+	min-height: 100vh;
+	animation: scale 0.7s ease-in forwards;
+	animation-delay: 500ms;
+}
+
+@keyframes scale {
+	0% {
+		transform: scale3D(0.1);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale3D(1);
+		opacity: 1;
+	}
+}
+
+/* Pagination */
+pagination-template .ngx-pagination {
+	margin-top: 20px;
+	justify-content: center;
+	margin-bottom: 0;
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+	border-radius: .25rem;
+}
+pagination-template .ngx-pagination li {
+	margin: 0;
+	position: relative;
+}
+pagination-template .ngx-pagination li.pagination-next,
+pagination-template .ngx-pagination li.pagination-previous {
+	padding: 0;
+	display: block;
+}
+pagination-template .ngx-pagination li.pagination-next span,
+pagination-template .ngx-pagination li.pagination-previous span,
+pagination-template .ngx-pagination li a {
+    background-color: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    line-height: 2;
+    text-align: center;
+    border-radius: 3px 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+pagination-template .ngx-pagination li.pagination-next span:hover,
+pagination-template .ngx-pagination li.pagination-previous span:hover,
+pagination-template .ngx-pagination li a:hover {
+	background: var(--blue);
+}
+pagination-template .ngx-pagination li.current {
+	color: var(--blue)!important;
+	background: transparent;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+	position: relative;
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 50px;
+    width: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	line-height: 2;
+	text-align: center;
+	border-radius: 50%;
+}
+pagination-template .ngx-pagination li.pagination-next::after,
+pagination-template .ngx-pagination li.pagination-next a:after,
+pagination-template .ngx-pagination li.pagination-previous a::before,
+pagination-template .ngx-pagination li.pagination-previous::before {
+	display: none!important;
+}

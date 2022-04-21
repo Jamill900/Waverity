@@ -1,0 +1,33 @@
+<div class="main">
+    <div class="section-head container-md animate__fadeInDown animate__animated">
+        <h2>News</h2>
+        <div class="hr"></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl nullam nisl ullamcorper volutpat amet ac.
+            Volutpat, ultricies molestie ut pharetra id est feugiat hendrerit.
+        </p>
+    </div>
+
+    <!-- News Cards -->
+
+    <div class="container row animate__fadeInDown animate__animated">
+        <div class="news-search col-12">
+            <input class="search-field col-12" type="text" name="title" [(ngModel)]="title" (ngModelChange)="search()"
+                placeholder="Search news">
+        </div>
+        <div class="col-12 d-flex flex-column flex-md-row mt-5 news-card" style="--animation-order: {{ data.id }};"
+            *ngFor="let data of news  | paginate: {itemsPerPage: 5, currentPage: p};">
+            <img src="{{ data.cover }}" alt="">
+            <div class="news-description">
+                <h3>{{ data.title }}</h3>
+                <p>{{ data.info | slice:0:350 }}...</p>
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                    <h4>{{ data.date }}</h4>
+                    <button routerLink="/news/{{ data.id }}">Read More</button>
+                </div>
+            </div>
+        </div>
+        <pagination-controls class="text-center mt-3" (pageChange)="onPageChange($event)" previousLabel="<"
+        nextLabel=">"></pagination-controls>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.banner-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-lg-7 {
+    width: 50%;
+}
+
+.next {
+    margin-left: 20px;
+}

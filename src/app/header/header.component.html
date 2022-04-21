@@ -1,0 +1,46 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark animate__fadeInDown animate__animated">
+    <div class="container">
+      <a class="navbar-brand logo" routerLink="/home"><img src="../../assets/images/logo.svg" alt="" width="40px"> WAVERITY</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown active">
+            <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLinkActive]="['active']">
+              Solutions
+            </a>
+            <ul class="dropdown-menu animate__animated animate__fadeInUp" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="/oil" [routerLinkActive]="['active']">Oil and Gas</a></li>
+              <li><a class="dropdown-item" routerLink="/rss" [routerLinkActive]="['active']">Remote Sensing Systems</a></li>
+              <li><a class="dropdown-item" routerLink="/custom" [routerLinkActive]="['active']">Custom Solutions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/news" [routerLinkActive]="['active']">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about" [routerLinkActive]="['active']">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/careers" [routerLinkActive]="['active']">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="openScrollableContent(longContent)">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <ng-template #longContent let-modal>
+    <div class="modal-header">
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesUmowTcYAyQBNPWbNlLCNyX-MfWmw1VtJnymrdMszLjdgxg/viewform?embedded=true" width="450" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+  </ng-template>

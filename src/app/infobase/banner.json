@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Crop Mapping and Yield Forecast",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news1.jpg",
+    "link": "rss"
+  },
+  {
+    "title": "Image Change Detection",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news2.jpg",
+    "link": "rss"
+  },
+  {
+    "title": "Geohazards and Security System Solutions",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news3.jpg",
+    "link": "rss"
+  },
+  {
+    "title": "Object Detection and Classification",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news1.jpg",
+    "link": "rss"
+  },
+  {
+    "title": "Enhancement of Seismic Vertical Resolution",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news1.jpg",
+    "link": "oil"
+  },
+  {
+    "title": "Improvement of Seismic Signal-To-Noise Ratio ",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news2.jpg",
+    "link": "oil"
+  },
+  {
+    "title": "Hybrid Deep Learning and Physics Based 4D Seismic Inversion",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news3.jpg",
+    "link": "oil"
+  },
+  {
+    "title": "AVO Classification for Fluid and Facies Identification",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news2.jpg",
+    "link": "oil"
+  },
+  {
+    "title": "DAS Data Processing for Zonal Flow Allocation",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news3.jpg",
+    "link": "oil"
+  },
+  {
+    "title": "Real-Time Monitoring of Intensive Distributed Fiber Optic Data",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news1.jpg",
+    "link": "oil"
+  },
+  {
+    "title": "AI Consultancy and Support to Optimize Routine Workflows",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news1.jpg",
+    "link": "custom"
+  },
+  {
+    "title": "Building the Technology Based on Specific Demand",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus.",
+    "cover": "../../assets/images/news2.jpg",
+    "link": "custom"
+  }
+]

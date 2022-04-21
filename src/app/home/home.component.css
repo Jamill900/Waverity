@@ -1,0 +1,124 @@
+#intro {
+  height: 100vh;
+  /* background: url('../../assets/images/bg_test.svg'); */
+  background-size: cover;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+#intro-caption{
+  margin: 0 20px;
+}
+#intro-caption h1 {
+  font-size: 3.8em;
+  text-align: left;
+  font-weight: 300;
+  line-height: 100px;
+  max-width: 600px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#intro-caption h1 > span {
+  color: var(--white);
+  font-weight: 500;
+}
+
+#intro-caption button {
+  border-radius: 3px 15px 3px 15px;
+  padding: 20px 55px;
+  border: none;
+  background: rgba(72, 72, 72, 0.7);
+	backdrop-filter: blur(30px);
+  text-align: center;
+  margin: auto;
+  outline: none;
+  color:var(--white);
+  cursor: pointer;
+}
+
+#intro-caption button:hover  {
+  color: var(--white);
+  background: var(--white);
+  transition-duration: 300ms;
+}
+
+.news {
+  margin-bottom: 30px;
+}
+.news > img {
+  width: 100%;
+  border-radius: 3px 15px 0 0;
+}
+
+.news-description {
+  padding: 30px 35px 30px 35px;
+  background: rgba(38, 38, 38, 0.7)!important;
+  backdrop-filter: blur(3px)!important;
+  width: 100%;
+  border-radius: 0 0 3px 15px;
+}
+
+.news-description h3 {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  color: var(--white);
+}
+.news-description p {
+  color: #8c8c8c;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  padding-bottom: 20px;
+}
+
+.news-description h4 {
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #8c8c8c;
+}
+
+.news-description button {
+  border: none;
+  background: rgba(72, 72, 72, 0.7);
+	backdrop-filter: blur(30px);
+  border-radius: 3px 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.02e;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.animated {
+  visibility: visible !important;
+}
+.hide-on-init {
+  visibility: hidden;
+}
+
+.news-description button:hover {
+  color: var(--white);
+  background-color: var(--dark);
+  transition-duration: 300ms;
+}/* 
+
+#technology {
+  background: url('../../assets/images/bg_all.svg');
+} */

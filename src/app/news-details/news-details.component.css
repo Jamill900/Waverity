@@ -1,0 +1,39 @@
+.news {
+    margin-top: 150px;
+}
+
+img {
+    float: left;
+    width: 500px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    border-radius: 3px 15px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 20px;
+    line-height: 179%;
+}
+
+p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-align: justify;
+    line-height: 199%;
+}
+
+.news {
+    background: rgba(56, 56, 56, 0.7)!important;
+    backdrop-filter: blur(30px)!important;
+    padding: 40px;
+    border-radius: 5px 25px;
+}
+
+* {
+    animation-duration: 1.2s;
+}
