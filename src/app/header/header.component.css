@@ -51,11 +51,6 @@ nav {
     position: relative;
 }
 
-#x .active a.nav-link {
-    color: yellow;
-    background-color: brown;
-}
-
 .nav-item>.nav-link::after {
     content: "";
     display: block !important;

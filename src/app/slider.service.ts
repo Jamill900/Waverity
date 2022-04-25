@@ -7,6 +7,7 @@ import $ from "jquery";
 })
 export class SliderService {
   public banner = data;
+
   constructor() { }
   settings = {
     autoplay: true,

@@ -1,3 +1,4 @@
+import { Oil } from './../oil';
 import { SliderService } from './../slider.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,4 +9,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent extends SliderService {
+  
 }

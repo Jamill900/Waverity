@@ -5,10 +5,79 @@
     justify-content: space-between;
 }
 
-.col-lg-7 {
-    width: 50%;
-}
 
 .next {
     margin-left: 20px;
+}
+
+h1 {
+    width: 90%;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 40px;
+    line-height: 160%;
+}
+
+p {
+    width: 90%;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-align: justify;
+    line-height: 199%;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+::ng-deep .nav-tabset:not(.disable-style) {
+    width: 100% !important;
+    list-style: none;
+    padding: 0;
+    display: none !important;
+    display: grid !important;
+    /* 
+    grid-gap: 10px!important; */
+    grid-template-columns: auto auto auto !important;
+    text-align: center !important;
+}
+
+::ng-deep .nav-tabset:not(.disable-style) .nav-tab {
+    border-bottom: 1px solid var(--white) !important;
+    margin-bottom: 20px;
+}
+
+::ng-deep .nav-tabset:not(.disable-style) .nav-tab.active {
+    border-color: var(--blue) !important;
+    color: var(--blue) !important;
+}
+
+::ng-deep .nav-tabset:not(.disable-style) .nav-tab.active span {
+    color: var(--blue) !important;
+}
+
+.main-btn {
+    border-radius: 3px 10px 3px 10px;
+    padding: 12px 25px;
+    margin-left: 40px;
+    border: none;
+    background: rgba(72, 72, 72, 0.7);
+    backdrop-filter: blur(30px);
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.bg {
+    padding: 10px 0 40px 0;
+    background: rgba(38, 38, 38, 0.4) !important;
+    backdrop-filter: blur(3px) !important;
+    border-radius: 15px;
+}
+
+a:hover {
+    color: var(--dark);
+    background: var(--white);
+    transition-duration: 300ms;
 }

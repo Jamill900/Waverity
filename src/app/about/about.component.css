@@ -18,7 +18,7 @@ button {
     margin: 30px auto 0 auto;
     border-radius: 3px 15px;
     padding: 20px 55px;
-    background: rgba(72, 72, 72, 0.7) !important;
+    background: rgba(38, 38, 38, 0.5) !important;
     backdrop-filter: blur(3px) !important;
     border: none;
     color: rgba(255, 255, 255, 0.8);
@@ -26,8 +26,14 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    color: var(--dark);
+    background: var(--white)!important;
+    transition-duration: 300ms;
+}
+
 .about-us {
-    background: rgba(38, 38, 38, 0.7) !important;
+    background: rgba(38, 38, 38, 0.5) !important;
     backdrop-filter: blur(3px) !important;
     padding: 40px;
     border-radius: 15px;
@@ -52,6 +58,6 @@ h6 {
     letter-spacing: 1px;
 }
 
-.row > div {
+.row>div {
     border-color: var(--blue) !important;
 }

@@ -1,85 +1,112 @@
-<!-- ul ngbNav #nav="ngbNav" class="nav-tabs">
-    <li [ngbNavItem]="1">
-      <a ngbNavLink>Oil / Gas</a>
-      <ng-template ngbNavContent>
-        <ngb-carousel>
-            <ng-template ngbSlide *ngFor="let data of oil">
-              <div class="picsum-img-wrapper">
-                <img [src]="data.cover" alt="Random first slide" width="100%">
+<div class="bg">
+  <ngx-tabset customNavClass="nav-test-class" customTabsClass="container">
+    <ngx-tab tabTitle="Oil and Gas" [bypassDOM]="true">
+      <ng-template>
+        <ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" (init)="slickInit($event)"
+          (beforeChange)="beforeChange($event)" class="banner-slider banner-slider-one banner-slider-active">
+          <!-- Data -->
+          <div ngxSlickItem class="single-banner" *ngFor="let item of banner.oil">
+            <div class="container-fluid container-1470">
+              <div class="row align-items-center">
+                <div class="col-lg-5 animate__fadeInLeft animate__animated wow">
+                  <div class="banner-img" data-animation="fadeInRight" data-delay="0.5s">
+                    <img [src]="item.cover" [alt]="item.title" width="490px" height="427px">
+                  </div>
+                </div>
+                <div class="col-lg-7 animate__fadeInRight animate__animated wow">
+                  <div class="banner-text">
+                    <div class="banner-content">
+                      <h1 data-animation="fadeInLeft" data-delay="0.6s" class="title">
+                        {{item.title}}
+                      </h1>
+                      <p data-animation="fadeInLeft" data-delay=".9s">
+                        {{item.info}}
+                      </p>
+                      <a routerLink="/oil" data-animation="fadeInUp" data-delay="1.1s"
+                        class="main-btn rounded-btn icon-right small-size">
+                        More Solutions
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="carousel-caption">
-                <h3>{{ data.title }}</h3>
-                <p>{{ data.info }}</p>
-              </div>
-            </ng-template>
-          </ngb-carousel>
-      </ng-template>
-    </li>
-    <li [ngbNavItem]="2">
-      <a ngbNavLink>Remote Sensing Systems
-      </a>
-      <ng-template ngbNavContent>
-        <ngb-carousel>
-            <ng-template ngbSlide *ngFor="let data of rss">
-              <div class="picsum-img-wrapper">
-                <img [src]="data.cover" alt="Random first slide" width="100%">
-              </div>
-              <div class="carousel-caption">
-                <h3>{{ data.title }}</h3>
-                <p>{{ data.info }}</p>
-              </div>
-            </ng-template>
-          </ngb-carousel>
-      </ng-template>
-    </li>
-    <li [ngbNavItem]="3">
-      <a ngbNavLink>Custom Solutions</a>
-      <ng-template ngbNavContent>
-        <ngb-carousel>
-            <ng-template ngbSlide *ngFor="let data of custom">
-              <div class="picsum-img-wrapper">
-                <img [src]="data.cover" alt="Random first slide" width="100%">
-              </div>
-              <div class="carousel-caption">
-                <h3>{{ data.title }}</h3>
-                <p>{{ data.info }}</p>
-              </div>
-            </ng-template>
-          </ngb-carousel>
-      </ng-template>
-    </li>
-  </ul>
-  
-  <div [ngbNavOutlet]="nav" class="mt-2"></div-->
-<ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" (init)="slickInit($event)"
-  (beforeChange)="beforeChange($event)" class="banner-slider banner-slider-one banner-slider-active">
-  <!-- Data -->
-  <div ngxSlickItem class="single-banner" *ngFor="let item of banner">
-    <div class="container-fluid container-1470">
-      <div class="row align-items-center">
-        <div class="col-lg-7 ml-4">
-          <div class="banner-text">
-            <div class="banner-content">
-              <h1 data-animation="fadeInLeft" data-delay="0.6s" class="title">
-                {{item.title}}
-              </h1>
-              <p data-animation="fadeInLeft" data-delay=".9s">
-                {{item.info}}
-              </p>
-              <a routerLink="/{{ item.link }}" data-animation="fadeInUp" data-delay="1.1s"
-                class="main-btn rounded-btn icon-right small-size">
-                Our Solutions
-              </a>
             </div>
           </div>
-        </div>
-        <div class="col-lg-5 d-none d-lg-block">
-          <div class="banner-img" data-animation="fadeInRight" data-delay="0.5s">
-            <img [src]="item.cover" [alt]="item.title">
+          <!-- Data -->
+        </ngx-slick-carousel>
+      </ng-template>
+    </ngx-tab>
+    <ngx-tab tabTitle="Remote Sensing Systems" [bypassDOM]="true">
+      <ng-template>
+        <ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" (init)="slickInit($event)"
+          (beforeChange)="beforeChange($event)" class="banner-slider banner-slider-one banner-slider-active">
+          <!-- Data -->
+          <div ngxSlickItem class="single-banner" *ngFor="let item of banner.rss">
+            <div class="container-fluid container-1470">
+              <div class="row align-items-center">
+                <div class="col-lg-5 animate__fadeInLeft animate__animated wow">
+                  <div class="banner-img" data-animation="fadeInRight" data-delay="0.5s">
+                    <img [src]="item.cover" [alt]="item.title" width="490px" height="427px">
+                  </div>
+                </div>
+                <div class="col-lg-7 animate__fadeInRight animate__animated wow">
+                  <div class="banner-text">
+                    <div class="banner-content">
+                      <h1 data-animation="fadeInLeft" data-delay="0.6s" class="title">
+                        {{item.title}}
+                      </h1>
+                      <p data-animation="fadeInLeft" data-delay=".9s">
+                        {{item.info}}
+                      </p>
+                      <a routerLink="/oil" data-animation="fadeInUp" data-delay="1.1s"
+                        class="main-btn rounded-btn icon-right small-size">
+                        More Solutions
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Data -->
-</ngx-slick-carousel>
+          <!-- Data -->
+        </ngx-slick-carousel>
+      </ng-template>
+    </ngx-tab>
+    <ngx-tab tabTitle="Custom Solutions" [bypassDOM]="true">
+      <ng-template>
+        <ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" (init)="slickInit($event)"
+          (beforeChange)="beforeChange($event)" class="banner-slider banner-slider-one banner-slider-active">
+          <!-- Data -->
+          <div ngxSlickItem class="single-banner" *ngFor="let item of banner.custom">
+            <div class="container-fluid container-1470">
+              <div class="row align-items-center">
+                <div class="col-lg-5 animate__fadeInLeft animate__animated wow">
+                  <div class="banner-img" data-animation="fadeInRight" data-delay="0.5s">
+                    <img [src]="item.cover" [alt]="item.title" width="490px" height="427px">
+                  </div>
+                </div>
+                <div class="col-lg-7 animate__fadeInRight animate__animated wow">
+                  <div class="banner-text">
+                    <div class="banner-content">
+                      <h1 data-animation="fadeInLeft" data-delay="0.6s" class="title">
+                        {{item.title}}
+                      </h1>
+                      <p data-animation="fadeInLeft" data-delay=".9s">
+                        {{item.info}}
+                      </p>
+                      <a routerLink="/oil" data-animation="fadeInUp" data-delay="1.1s"
+                        class="main-btn rounded-btn icon-right small-size">
+                        More Solutions
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Data -->
+        </ngx-slick-carousel>
+      </ng-template>
+    </ngx-tab>
+  </ngx-tabset>
+</div>

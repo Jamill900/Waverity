@@ -177,6 +177,11 @@
 .vacancies .vacancy:hover button {
     -webkit-animation: down linear 0.3s forwards;
     animation: down linear 0.3s forwards;
+    color: var(--white)!important;
+}
+
+button>a:hover {
+    color: var(--blue)!important;
 }
 
 

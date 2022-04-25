@@ -102,7 +102,7 @@ section {
 
 .section>button:hover {
 	color: var(--dark);
-	background: var(--white);
+	background: var(--white)!important;
 	transition-duration: 300ms;
 }
 
@@ -200,33 +200,36 @@ pagination-template .ngx-pagination {
 	list-style: none;
 	border-radius: .25rem;
 }
+
 pagination-template .ngx-pagination li {
 	margin: 0;
 	position: relative;
 }
+
 pagination-template .ngx-pagination li.pagination-next,
 pagination-template .ngx-pagination li.pagination-previous {
 	padding: 0;
 	display: block;
 }
+
 pagination-template .ngx-pagination li.pagination-next span,
 pagination-template .ngx-pagination li.pagination-previous span,
 pagination-template .ngx-pagination li a {
-    background-color: none;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0;
-    position: relative;
-    margin-left: 7px;
-    margin-right: 7px;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    line-height: 2;
-    text-align: center;
-    border-radius: 3px 15px;
-    align-items: center;
-    justify-content: center;
+	background-color: none;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+	position: relative;
+	margin-left: 7px;
+	margin-right: 7px;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	line-height: 2;
+	text-align: center;
+	border-radius: 3px 15px;
+	align-items: center;
+	justify-content: center;
 }
 
 pagination-template .ngx-pagination li.pagination-next span:hover,
@@ -234,27 +237,29 @@ pagination-template .ngx-pagination li.pagination-previous span:hover,
 pagination-template .ngx-pagination li a:hover {
 	background: var(--blue);
 }
+
 pagination-template .ngx-pagination li.current {
-	color: var(--blue)!important;
+	color: var(--blue) !important;
 	background: transparent;
 	font-size: 16px;
 	font-weight: 600;
 	margin: 0;
 	position: relative;
-    margin-left: 7px;
-    margin-right: 7px;
-    height: 50px;
-    width: 50px;
+	margin-left: 7px;
+	margin-right: 7px;
+	height: 50px;
+	width: 50px;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 	line-height: 2;
 	text-align: center;
 	border-radius: 50%;
 }
+
 pagination-template .ngx-pagination li.pagination-next::after,
 pagination-template .ngx-pagination li.pagination-next a:after,
 pagination-template .ngx-pagination li.pagination-previous a::before,
 pagination-template .ngx-pagination li.pagination-previous::before {
-	display: none!important;
+	display: none !important;
 }

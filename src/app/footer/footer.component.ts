@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  closeResult: string;
+
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
 
+  openScrollableContent(longContent: any) {
+    this.modalService.open(longContent, { scrollable: true });
+  }
 }

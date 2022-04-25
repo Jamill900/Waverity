@@ -2,10 +2,13 @@
   background: none
 }
 
+#contact-button>button:hover {
+  color: var(--dark);
+  background: var(--white);
+  transition-duration: 300ms;
+}
+
 footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-top: 40px;
 }
 
@@ -13,7 +16,6 @@ footer #logo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-bottom: 20px;
 }
 
 footer #logo a {
@@ -32,6 +34,7 @@ footer #footer-bar ul {
   align-items: center;
   justify-content: space-around;
   list-style: none;
+  margin-bottom: 0;
 }
 
 footer #footer-bar ul li a {
@@ -49,6 +52,44 @@ footer button {
   outline: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px 10px;
+  cursor: pointer;
+
+}
+
+li > a {
+  color: rgb(155, 155, 155);
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+li >a::after {
+  content: "";
+  display: block !important;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  margin-top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+
+}
+
+li>a:hover::after,
+li>a.active::after {
+  width: 100%;
+  background: var(--blue);
+}
+
+a.active {
+  color: var(--white) !important;
 }
 
 /* credits */

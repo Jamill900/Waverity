@@ -7,13 +7,13 @@
       <div class="navbar collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item dropdown active">
-            <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLinkActive]="['active']">
+            <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="{'active': oilLink.isActive || rssLink.isActive || customLink.isActive}">
               Solutions
             </a>
             <ul class="dropdown-menu animate__animated animate__fadeInUp" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="/oil" [routerLinkActive]="['active']">Oil and Gas</a></li>
-              <li><a class="dropdown-item" routerLink="/rss" [routerLinkActive]="['active']">Remote Sensing Systems</a></li>
-              <li><a class="dropdown-item" routerLink="/custom" [routerLinkActive]="['active']">Custom Solutions</a></li>
+              <li><a class="dropdown-item" routerLink="/oil" [routerLinkActive]="['active']" #oilLink="routerLinkActive">Oil and Gas</a></li>
+              <li><a class="dropdown-item" routerLink="/rss" [routerLinkActive]="['active']" #rssLink="routerLinkActive">Remote Sensing Systems</a></li>
+              <li><a class="dropdown-item" routerLink="/custom" [routerLinkActive]="['active']" #customLink="routerLinkActive">Custom Solutions</a></li>
             </ul>
           </li>
           <li class="nav-item">
