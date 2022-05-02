@@ -14,11 +14,11 @@
             <li class="col-lg-4 col-md-6 col-sm-12 text-center" *ngFor="let data of oil" [ngbNavItem]="data.id">
                 <a ngbNavLink>{{ data.button }}</a>
                 <ng-template ngbNavContent>
-                    <div class="d-flex flex-lg-row flex-md-column flex-sm-column justify-content-center align-items-center">
+                    <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
                         <div *ngIf="data.id == 1 || data.id == 2" class="animate__fadeInLeft animate__animated">
                             <img-comparison-slider hover="hover">
-                                <img slot="first" width="auto%" height="500px" src="../../assets/images/before.png" />
-                                <img slot="second" width="auto" height="500px" src="../../assets/images/after.png" />
+                                <img slot="first" src="../../assets/images/before.png" />
+                                <img slot="second" src="../../assets/images/after.png" />
                             </img-comparison-slider>
                         </div>
                         <img *ngIf="data.id > 2" [src]="data.cover" alt=""

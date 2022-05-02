@@ -81,3 +81,37 @@ a:hover {
     background: var(--white);
     transition-duration: 300ms;
 }
+
+.banner-img img{
+    width:490px;
+    height:427px;
+}
+
+@media screen and (max-width:1200px){
+    .banner-img{
+        margin-bottom: 15px;
+    }
+    .banner-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:480px){
+    ::ng-deep .banner-slider .slick-arrow img{
+        max-height: 50px;
+    }
+    .banner-content h1,.banner-content p{
+        padding-left: 0;
+        width: 100%;
+    }
+    .banner-content h1{
+        font-size:24px;
+    }
+    .main-btn{
+        margin-left: 0;
+    }
+    ::ng-deep .nav-tabset:not(.disable-style){
+        grid-template-columns: 1fr !important;
+    }
+}
