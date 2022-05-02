@@ -61,3 +61,10 @@ h6 {
 .row>div {
     border-color: var(--blue) !important;
 }
+
+@media screen and (max-width: 768px) {
+    p{
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}

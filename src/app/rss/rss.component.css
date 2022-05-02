@@ -60,3 +60,19 @@
     backdrop-filter: blur(3px)!important;
     border-radius: 15px;
 }
+
+.tab-content img{
+    width: 50%;
+    height: 100%;
+    max-height: 500px;
+    margin: 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .tab-content img{
+        width: 100%;
+    }
+    .product {
+        width: 100%;
+    }
+}
