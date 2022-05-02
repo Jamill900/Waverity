@@ -1,19 +1,19 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark animate__fadeInDown animate__animated">
     <div class="container">
-      <a class="navbar-brand logo" routerLink="/home"><img src="../../assets/images/logo.svg" alt="" width="40px"> WAVERITY</a>
+      <a class="navbar-brand logo" routerLink="/home"><img src="../../assets/images/logo2.svg" alt="" width="100px"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar collapse navbar-collapse mt-3" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item dropdown active">
             <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="{'active': oilLink.isActive || rssLink.isActive || customLink.isActive}">
               Solutions
             </a>
             <ul class="dropdown-menu animate__animated animate__fadeInUp" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="/oil" [routerLinkActive]="['active']" #oilLink="routerLinkActive">Oil and Gas</a></li>
-              <li><a class="dropdown-item" routerLink="/rss" [routerLinkActive]="['active']" #rssLink="routerLinkActive">Remote Sensing Systems</a></li>
-              <li><a class="dropdown-item" routerLink="/custom" [routerLinkActive]="['active']" #customLink="routerLinkActive">Custom Solutions</a></li>
+              <li><a class="dropdown-item" routerLink="/oil/1" [routerLinkActive]="['active']" #oilLink="routerLinkActive">Oil and Gas</a></li>
+              <li><a class="dropdown-item" routerLink="/rss/1" [routerLinkActive]="['active']" #rssLink="routerLinkActive">Remote Sensing Systems</a></li>
+              <li><a class="dropdown-item" routerLink="/custom/1" [routerLinkActive]="['active']" #customLink="routerLinkActive">Custom Solutions</a></li>
             </ul>
           </li>
           <li class="nav-item">

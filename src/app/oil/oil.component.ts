@@ -1,5 +1,3 @@
-import { Custom } from './../custom';
-import { Rss } from './../rss';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Oil } from '../oil';
@@ -14,10 +12,8 @@ import { SolutionsService } from '../solutions.service';
 export class OilComponent implements OnInit {
 
   oil: Oil[] = [];
-  rss: Rss[] = [];
-  custom: Custom[] = [];
   loading = false;
-  active = 1;
+  active : number;
 
   @ViewChild('tabset', { static: true }) tabset: any;
 
@@ -25,6 +21,7 @@ export class OilComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.active = Number(this.route.snapshot.paramMap.get('id'));
     this.getOilProducts();
   }
 

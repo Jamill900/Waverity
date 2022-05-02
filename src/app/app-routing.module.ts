@@ -16,9 +16,10 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'news/:id', component: NewsDetailsComponent },
-  { path: 'oil', component: OilComponent },
-  { path: 'rss', component: RssComponent },
-  { path: 'custom', component: CustomComponent }
+  { path: 'oil/:id', component: OilComponent },
+  { path: 'oil', component: OilComponent},
+  { path: 'rss/:id', component: RssComponent },
+  { path: 'custom/:id', component: CustomComponent }
 ];
 
 @NgModule({

@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Custom } from '../custom';
 import { SolutionsService } from '../solutions.service';
@@ -11,15 +12,15 @@ export class CustomComponent implements OnInit {
 
   custom: Custom[] = [];
   loading = false;
-  active = 1;
+  active : number;
 
   @ViewChild('tabset', { static: true }) tabset: any;
 
-  constructor(private solutions: SolutionsService) { }
+  constructor(private solutions: SolutionsService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.active = Number(this.route.snapshot.paramMap.get('id'));
     this.getCustomProducts();
-    this.tabset.tabs[0].active = true;
   }
   
   getCustomProducts() {

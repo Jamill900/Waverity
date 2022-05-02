@@ -34,7 +34,7 @@ body {
 	color: #fff;
 	margin: 0;
 	padding: 0;
-	background: rgba(0, 0, 0, 0.7);
+	background: #979797;
 	overflow-x: hidden;
 	/* background-image: url("assets/images/bg_all.svg");
 	background-size: cover;
@@ -71,7 +71,7 @@ section {
 }
 
 .section>.hr {
-	margin: 10px auto 20px auto;
+	margin: 10px auto 40px auto;
 	width: 50px;
 	border: 2px solid var(--blue);
 	filter: drop-shadow(0 0 0 var(--blue));
@@ -89,7 +89,7 @@ section {
 .section>button {
 	display: flex;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 30px;
 	border-radius: 3px 15px 3px 15px;
 	padding: 20px 55px;
 	background: rgba(72, 72, 72, 0.7) !important;
@@ -117,7 +117,7 @@ section {
 }
 
 .section-head>.hr {
-	margin: 10px auto 0 auto;
+	margin: 10px auto 40px auto;
 	width: 50px;
 	border: 2px solid var(--blue);
 	filter: drop-shadow(0 0 0 var(--blue));
@@ -176,6 +176,10 @@ section {
 	min-height: 100vh;
 	animation: scale 0.7s ease-in forwards;
 	animation-delay: 500ms;
+}
+
+.main p {
+	font-size: 16px;
 }
 
 @keyframes scale {

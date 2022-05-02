@@ -124,3 +124,9 @@
 #technology {
   background: url('../../assets/images/bg_all.svg');
 } */
+
+@media (max-width: 768px) {
+  #slider {
+    display: none;
+  }
+}

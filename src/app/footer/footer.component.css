@@ -12,11 +12,6 @@ footer {
   padding-top: 40px;
 }
 
-footer #logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 footer #logo a {
   font-weight: 600;
@@ -24,23 +19,22 @@ footer #logo a {
   font-size: 1.3em;
 }
 
-footer #footer-bar {
-  width: 70%;
-}
 
 footer #footer-bar ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
   margin-bottom: 0;
+  padding: 0;
 }
 
 footer #footer-bar ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 300;
+  margin: 0 50px;
 }
 
 footer button {
@@ -57,7 +51,6 @@ footer button {
 li {
   list-style-type: none;
   display: inline-block;
-  margin: 5px 10px;
   cursor: pointer;
 
 }

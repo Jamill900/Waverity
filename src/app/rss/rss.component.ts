@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Rss } from '../rss';
 import { SolutionsService } from '../solutions.service';
@@ -11,16 +12,17 @@ export class RssComponent implements OnInit {
 
   rss: Rss[] = [];
   loading = false;
-  active = 1;
+  active : number;
 
   selectedProduct: Rss;
   @ViewChild('tabset', { static: true }) tabset: any;
 
-  constructor(private solutions: SolutionsService) { }
+  constructor(private solutions: SolutionsService,
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.active = Number(this.route.snapshot.paramMap.get('id'));
     this.getRssProducts();
-    this.tabset.tabs[0].active = true;
   }
 
   onSelect(product: Rss): void {

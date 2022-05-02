@@ -121,19 +121,19 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 1,
         title: 'Crop Mapping and Yield Forecast',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus. Non tortor tincidunt aenean sit felis fermentum dui nunc.',
+        info: 'The technology provides management solutions for crop health mapping and yield forecasting via the integration of high-res multispectral satellite or aerial imagery with Deep Learning algorithms. Modern satellite technologies are able to provide daily, weekly and monthly image data covering large areas, that can be embedded into automated workflows with broad crop monitoring applications in agriculture.',
         cover: '../../assets/images/news1.jpg'
       },
       {
         id: 2,
         title: 'Image Change Detection',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus. Non tortor tincidunt aenean sit felis fermentum dui nunc.',
+        info: 'The solution focuses on the processing of satellite-derived images taken over the same area for a period of time in order to identify, monitor and forecast potential geohazards events such as landslides, floodings, etc. Data analytics and ML core of the technology allow mitigating the limitation of human-based monitoring practices via automating of all procedures of surveillance.',
         cover: '../../assets/images/news2.jpg'
       },
       {
         id: 3,
         title: 'Geohazards and Security System Solutions',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus. Non tortor tincidunt aenean sit felis fermentum dui nunc.',
+        info: 'Proposed technology enables the identification of changes between scenes of the same geographical location observed on satellite images acquired at different times. This has a broad application in areas such as security surveillance, land use monitoring, agriculture, construction and etc.',
         cover: '../../assets/images/news3.jpg'
       }
     ];
@@ -143,14 +143,14 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 1,
         button: 'AI Consultancy and Support',
         title: 'AI Consultancy and Support to Optimize Routine Workflows',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus. Non tortor tincidunt aenean sit felis fermentum dui nunc.',
+        info: 'Our experienced team can provide high quality, customer-tailored AI solutions to address specific challenges of our customers as well as to maximize the efficiency of their existing processes through automation of routine workflows.',
         cover: '../../assets/images/news5.jpg'
       },
       {
         id: 2,
         button: 'Technology on Specific Demand',
         title: 'Building the Technology Based on Specific Demand',
-        info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, risus, magna scelerisque euismod integer lorem. Ultricies tempor lacus erat arcu nisl ut tempus faucibus. Non tortor tincidunt aenean sit felis fermentum dui nunc.',
+        info: 'We are eager to work closely with our customers to develop innovative digital solutions that will empower them to address pressing business challenges.',
         cover: '../../assets/images/news4.jpg'
       }
     ];
