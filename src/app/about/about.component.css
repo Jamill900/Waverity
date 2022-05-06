@@ -3,6 +3,10 @@ img {
     border-radius: 10px;
 }
 
+.hr {
+    margin-bottom: 45px;
+}
+
 p {
     width: 100%;
     font-weight: 400;

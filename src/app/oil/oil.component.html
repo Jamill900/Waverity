@@ -9,7 +9,7 @@
 
         </p>
     </div>
-    <div class="bg">
+    <div class="bg mb-5">
         <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs row justify-content-center">
             <li class="col-lg-4 col-md-6 col-sm-12 text-center" *ngFor="let data of oil" [ngbNavItem]="data.id">
                 <a ngbNavLink>{{ data.button }}</a>
