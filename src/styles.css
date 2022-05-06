@@ -10,6 +10,10 @@
 	--blue: #ff5500;
 }
 
+html > div[style] {
+	display: none !important;
+  }
+
 * {
 	font-family: "Poppins";
 	font-size: 1em;
@@ -124,7 +128,7 @@ section {
 }
 
 .section-head>.hr {
-	margin: 10px auto 40px auto;
+	margin: 10px auto 10px auto;
 	width: 50px;
 	border: 2px solid var(--blue);
 	filter: drop-shadow(0 0 0 var(--blue));
