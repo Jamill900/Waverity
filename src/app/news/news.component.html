@@ -15,7 +15,7 @@
             <input class="search-field col-12" type="text" name="title" [(ngModel)]="title" (ngModelChange)="search()"
                 placeholder="Search news">
         </div>
-        <div class="col-12 d-flex flex-column flex-md-row mt-5 news-card" style="--animation-order: {{ data.id }};"
+        <div class="col-12 d-flex flex-column flex-md-row mt-4 news-card" style="--animation-order: {{ data.id }};"
             *ngFor="let data of news  | paginate: {itemsPerPage: 5, currentPage: p};">
             <img src="{{ data.cover }}" alt="">
             <div class="news-description">

@@ -50,6 +50,14 @@ video {
 	left: 0;
 	z-index: -9999;
 	filter: brightness(65%);
+	transform: rotateY(180deg);
+}
+
+.bg {
+    padding: 10px 0 40px 0;
+    background: rgba(38, 38, 38, 0.4) !important;
+    backdrop-filter: blur(3px) !important;
+    border-radius: 15px;
 }
 
 a {
@@ -88,8 +96,7 @@ section {
 
 .section>button {
 	display: flex;
-	margin: auto;
-	margin-top: 30px;
+	margin: 10px auto 40px auto;
 	border-radius: 3px 15px 3px 15px;
 	padding: 20px 55px;
 	background: rgba(72, 72, 72, 0.7) !important;
@@ -240,6 +247,10 @@ pagination-template .ngx-pagination li.pagination-next span:hover,
 pagination-template .ngx-pagination li.pagination-previous span:hover,
 pagination-template .ngx-pagination li a:hover {
 	background: var(--blue);
+}
+
+pagination-template .ngx-pagination li.current span {
+	color: var(--blue);
 }
 
 pagination-template .ngx-pagination li.current {

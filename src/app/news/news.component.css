@@ -146,7 +146,3 @@ ul.search-result {
     margin-top: 0;
     padding-left: 0;
 }
-
-:host {
-    filter: brightness(20%);
-}

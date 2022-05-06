@@ -48,6 +48,20 @@ p {
     margin-bottom: 20px;
 }
 
+::ng-deep .nav-tabset .nav-tab {
+    padding: 0!important;
+}
+
+::ng-deep .nav-tabset .nav-tab span {
+    display: block;
+    width: 100%;
+    padding: 10px!important;
+}
+
+::ng-deep .nav-tabset:not(.disable-style) .nav-tab span:hover {
+    color: var(--blue) !important;
+}
+
 ::ng-deep .nav-tabset:not(.disable-style) .nav-tab.active {
     border-color: var(--blue) !important;
     color: var(--blue) !important;

@@ -12,6 +12,9 @@ footer {
   padding-top: 40px;
 }
 
+#logo {
+  width: 160px;
+}
 
 footer #logo a {
   font-weight: 600;
@@ -20,7 +23,7 @@ footer #logo a {
 }
 
 
-footer #footer-bar ul {
+footer ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,7 +33,7 @@ footer #footer-bar ul {
   padding: 0;
 }
 
-footer #footer-bar ul li a {
+footer ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 300;
@@ -42,7 +45,7 @@ footer button {
   padding: 12px 25px;
   border: none;
   background: rgba(72, 72, 72, 0.7);
-	backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   outline: none;
   color: #ffffff;
   cursor: pointer;
@@ -55,14 +58,14 @@ li {
 
 }
 
-li > a {
+li>a {
   color: rgb(155, 155, 155);
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
 
-li >a::after {
+li>a::after {
   content: "";
   display: block !important;
   margin: auto;
@@ -91,7 +94,7 @@ a.active {
   flex-direction: row;
   justify-content: space-between; */
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .credits h5 {
@@ -113,14 +116,29 @@ a.active {
 }
 
 @media (max-width: 680px) {
-  footer #footer-bar ul {
+
+  footer {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  #logo {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 115px;
+  }
+
+  footer ul {
     flex-direction: column;
     padding-left: 0;
     padding-bottom: 20px;
   }
 
-  footer #footer-bar ul li {
+
+  footer ul li {
     padding-bottom: 20px;
   }
-  
+
 }

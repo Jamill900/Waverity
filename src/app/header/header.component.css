@@ -16,6 +16,7 @@
 nav {
     background: rgba(0, 0, 0, 0.4) !important;
     backdrop-filter: blur(6px) !important;
+    padding: 0;
 }
 
 .dropdown-menu {
