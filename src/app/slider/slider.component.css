@@ -5,6 +5,11 @@
     justify-content: space-between;
 }
 
+button {
+    display: flex;
+    margin: 30px auto 0 auto;
+
+}
 
 .next {
     margin-left: 20px;

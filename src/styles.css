@@ -10,9 +10,9 @@
 	--blue: #ff5500;
 }
 
-html > div[style] {
+html>div[style] {
 	display: none !important;
-  }
+}
 
 * {
 	font-family: "Poppins";
@@ -24,6 +24,41 @@ html > div[style] {
 	margin: 0;
 }
 
+/* Templates */
+
+.button {
+	background: rgba(72, 72, 72, 0.7);
+	backdrop-filter: blur(30px);
+	border: none;
+	border-radius: 3px 10px;
+	padding: 20px 55px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.02e;
+	color: var(--white);
+	cursor: pointer;
+}
+
+.button-small {
+	background: rgba(72, 72, 72, 0.7);
+	backdrop-filter: blur(30px);
+	border: none;
+	border-radius: 3px 10px;
+	padding: 10px 15px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -0.02e;
+	color: var(--white);
+	cursor: pointer;	
+}
+
+.button:hover {
+	color: var(--dark);
+	background: var(--white);
+	transition-duration: 300ms;
+}
+
+/* End */
 .tech_p {
 	padding-bottom: 40px;
 }
@@ -58,10 +93,10 @@ video {
 }
 
 .bg {
-    padding: 10px 0 40px 0;
-    background: rgba(38, 38, 38, 0.4) !important;
-    backdrop-filter: blur(3px) !important;
-    border-radius: 15px;
+	padding: 10px 0 40px 0;
+	background: rgba(38, 38, 38, 0.4) !important;
+	backdrop-filter: blur(3px) !important;
+	border-radius: 15px;
 }
 
 a {
@@ -113,7 +148,7 @@ section {
 
 .section>button:hover {
 	color: var(--dark);
-	background: var(--white)!important;
+	background: var(--white) !important;
 	transition-duration: 300ms;
 }
 
