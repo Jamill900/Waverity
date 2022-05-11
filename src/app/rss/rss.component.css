@@ -1,3 +1,7 @@
+.bg {
+    padding-top: 15px!important;
+}
+
 .product img {
     float: left;
     margin-right: 60px;
@@ -6,8 +10,14 @@
 }
 
 .before-after {
+    width: 100%!important;
     float: left;
 }
+img-comparison-slider {
+    --divider-width: 2px;
+    --divider-color: #c0c0c0;
+    --default-handle-opacity: 0.3;
+  }
 
 .product h2 {
     font-weight: 600;
@@ -16,10 +26,6 @@
     padding-top: 5px;
     padding-left: 20px;
     line-height: 160%;
-}
-
-.product {
-    width: 50%;
 }
 
 .product p {
@@ -47,7 +53,14 @@
     border-bottom: 1px solid var(--white)!important;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover {
+    background: none!important;
+    color: var(--blue)!important;
+    border: none!important;
+    border-bottom: 1px solid var(--white)!important;
+}
+
+.nav-link.active {
     background: none!important;
     color: var(--blue)!important;
     border: none!important;
@@ -55,7 +68,7 @@
 }
 
 .bg {
-    padding: 30px;
+    padding: 40px;
     background: rgba(38, 38, 38, 0.7)!important;
     backdrop-filter: blur(3px)!important;
     border-radius: 15px;
@@ -68,10 +81,11 @@
     margin: 0px 10px;
 }
 
+.product {
+    width: 50%;
+}
+
 @media screen and (max-width: 768px) {
-    .tab-content img{
-        width: 100%;
-    }
     .product {
         width: 100%;
     }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import * as data from '../infobase/careers.json'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-careers',
@@ -13,9 +14,13 @@ export class CareersComponent implements OnInit {
 
   careers: any = (data as any).default;
 
-  constructor(private httplient: HttpClient) { }
+  constructor(private httplient: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateTo(url: string) {
+    window.open(url, '_blank');
   }
 
   toggleModal() {

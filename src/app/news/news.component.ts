@@ -13,6 +13,7 @@ export class NewsComponent implements OnInit {
   title: any;
   p: number = 1;
   filterTerm!: string;
+  searchText: any;
 
   loading = false;
 
@@ -27,19 +28,6 @@ export class NewsComponent implements OnInit {
     this.newsService.getNews().subscribe( news => {
         this.news = news.reverse();
       })
-  }
-
-  search() {
-    this.loading = true;
-    if (this.title == "") {
-      this.ngOnInit();
-    }
-    else {
-      this.news = this.news.filter(res => {
-        return res.title.toLocaleLowerCase().match(this.title.toLocaleLowerCase());
-      });
-    }
-    this.p = 1;
   }
 
   onPageChange(page: number) {

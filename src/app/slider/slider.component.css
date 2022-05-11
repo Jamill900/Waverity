@@ -106,6 +106,7 @@ a:hover {
     height:427px;
 }
 
+
 @media screen and (max-width:1200px){
     .banner-img{
         margin-bottom: 15px;
@@ -113,6 +114,16 @@ a:hover {
     .banner-img img{
         width: 100%;
         height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-img {
+      display: none;
+    }
+
+    .main-btn {
+        display: none;
     }
 }
 

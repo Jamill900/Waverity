@@ -14,6 +14,7 @@
     animation-delay: calc(var(--animation-order) * 100ms);
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
+    cursor: pointer;
 }
 
 .vacancy h3 {
@@ -172,6 +173,8 @@
 .vacancies .vacancy:hover .details {
     -webkit-animation: up linear 0.3s forwards;
     animation: up linear 0.3s forwards;
+    box-shadow: 0 4px 2px -2px var(--blue);
+    transition-duration: 1s;
 }
 
 .vacancies .vacancy:hover button {

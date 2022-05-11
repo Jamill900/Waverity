@@ -56,25 +56,6 @@
     color: var(--white);
 }
 
-.news-description button {
-    background: rgba(72, 72, 72, 0.7);
-    backdrop-filter: blur(30px);
-    border: none;
-    border-radius: 3px 10px;
-    padding: 10px 15px;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: -0.02e;
-    color: var(--white);
-    cursor: pointer;
-}
-
-.news-description button:hover {
-    color: var(--dark);
-    background: var(--white);
-    transition-duration: 300ms;
-}
-
 .ngx-pagination a,
 .ngx-pagination button {
     color: var(--white) !important;
