@@ -10,7 +10,7 @@
             <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="{'active': oilLink.isActive || rssLink.isActive || customLink.isActive}">
               Solutions
             </a>
-            <ul class="dropdown-menu animate__animated animate__fadeIn" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" routerLink="/oil/1" [routerLinkActive]="['active']" #oilLink="routerLinkActive">Oil and Gas</a></li>
               <li><a class="dropdown-item" routerLink="/rss/1" [routerLinkActive]="['active']" #rssLink="routerLinkActive">Remote Sensing Systems</a></li>
               <li><a class="dropdown-item" routerLink="/custom/1" [routerLinkActive]="['active']" #customLink="routerLinkActive">Custom Solutions</a></li>

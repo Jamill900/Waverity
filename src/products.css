@@ -92,4 +92,8 @@ img-comparison-slider {
      img{
         max-width: 300px;
     }
+
+    .product img {
+        max-width: 300px !important;
+    }
 }
