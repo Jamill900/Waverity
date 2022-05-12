@@ -22,6 +22,7 @@ html>div[style] {
 	color: #fff;
 	padding: 0;
 	margin: 0;
+	user-select: text !important;
 }
 
 /* Templates */
@@ -52,13 +53,15 @@ html>div[style] {
 	cursor: pointer;	
 }
 
-.button:hover {
+.button:hover, .button-small:hover {
 	color: var(--dark);
 	background: var(--white);
 	transition-duration: 300ms;
 }
 
 /* End */
+
+
 .tech_p {
 	padding-bottom: 40px;
 }

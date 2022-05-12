@@ -6,10 +6,16 @@
 
 .logo img {
     margin-right: 10px;
+    margin-bottom: 20px!important;
 }
 
 .navbar-nav {
     margin-right: 20px;
+}
+
+* {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 
@@ -17,6 +23,7 @@ nav {
     background: rgba(0, 0, 0, 0.4) !important;
     backdrop-filter: blur(6px) !important;
     padding: 0;
+    padding-top: 10px !important;
 }
 
 .dropdown-menu {
@@ -129,4 +136,17 @@ nav {
 
 iframe {
     margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        margin-bottom: 0px!important;
+    }
+
+    nav {
+        background: rgba(0, 0, 0, 0.4) !important;
+        backdrop-filter: blur(6px) !important;
+        padding: 0;
+        padding: 5px 0 !important;
+    }
 }
