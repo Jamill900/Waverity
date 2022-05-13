@@ -72,11 +72,16 @@ nav {
 }
 
 body {
-	background-color: var(--dark);
+/* 	background: url(assets/images/bg-demo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	filter: brightness(65%); */
+	/* background: var(--dark) !important; */
+	background: #555;
 	color: #fff;
 	margin: 0;
 	padding: 0;
-	background: #979797;
 	overflow-x: hidden;
 	/* background-image: url("assets/images/bg_all.svg");
 	background-size: cover;

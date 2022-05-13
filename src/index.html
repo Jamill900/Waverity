@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <video playsinline autoplay muted loop id="bgvid">
+  <video autoplay muted loop playsinline preload="auto" onloadedmetadata="this.muted = true" id="bgvid">
     <source src="assets/images/bg_video.mp4" type="video/mp4">
   </video>
   <app-root></app-root>
