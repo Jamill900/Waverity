@@ -1,4 +1,4 @@
-<!-- <div class="main container">
+<div class="main container">
     <div class="section-head container-md animate__fadeInDown animate__animated">
         <h2>Oil and Gas</h2>
         <div class="hr"></div>
@@ -24,45 +24,8 @@
                         <img *ngIf="data.id > 2" [src]="data.cover" alt=""
                                 class="animate__fadeInLeft animate__animated">
                         <div class="product">
-                            <h2 class="animate__fadeInRight animate__animated">{{ data.title }}</h2>
-                            <p class="animate__fadeInRightBig animate__animated">{{ data.info }}</p>
-                        </div>
-                    </div>
-                </ng-template>
-            </li>
-        </ul>
-        <div [ngbNavOutlet]="nav"></div>
-    </div>
-</div> -->
-
-<div class="main container">
-    <div class="section-head container-md animate__fadeInDown animate__animated">
-        <h2>Oil and Gas</h2>
-        <div class="hr"></div>
-        <p>
-            We have six products in our oil and gas portfolio that focus on addressing pressing technical challenges of
-            the industry with a wide application of Deep Learning and Signal Processing algorithms combined with domain
-            knowledge.
-
-        </p>
-    </div>
-    <div class="bg mb-5">
-        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs row justify-content-center">
-            <li class="col-lg-4 col-md-6 col-sm-12 text-center" *ngFor="let data of oil" [ngbNavItem]="data.id">
-                <a ngbNavLink>{{ data.button }}</a>
-                <ng-template ngbNavContent>
-                    <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
-                        <div *ngIf="data.id == 1 || data.id == 2" >
-                            <img-comparison-slider hover="hover">
-                                <img slot="first" src="../../assets/images/before.png" />
-                                <img slot="second" src="../../assets/images/after.png" />
-                            </img-comparison-slider>
-                        </div>
-                        <img *ngIf="data.id > 2" [src]="data.cover" alt=""
-                                >
-                        <div class="product">
-                            <h2>{{ data.title }}</h2>
-                            <p>{{ data.info }}</p>
+                            <h2 class="animate__fadeInUp animate__animated">{{ data.title }}</h2>
+                            <p class="animate__fadeInUp animate__animated">{{ data.info }}</p>
                         </div>
                     </div>
                 </ng-template>

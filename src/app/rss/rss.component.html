@@ -1,29 +1,26 @@
-<div class="main">
-    <div class="main container">
-        <div class="section-head container-md animate__fadeInDown animate__animated">
-            <h2>Remote Sensing Systems</h2>
-            <p>
-                By applying Deep Learning algorithms and ML techniques we transform high resolution, multispectral satellite image data into powerful automated monitoring solutions that have broad applications in various industries.
-            </p>
-        </div>
-        <div class="bg">
-            <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs row justify-content-center">
-                <li [ngbNavItem]="data.id" class="col-lg-6 col-sm-12 text-center" *ngFor="let data of rss">
-                    <a ngbNavLink>{{ data.title }}</a>
-                    <ng-template ngbNavContent>
-                        <div
-                            class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
-                            <img [src]="data.cover" alt="" class="animate__fadeInLeft animate__animated">
-                            <div class="product">
-
-                                <h2 class="animate__fadeInRight animate__animated">{{ data.title }}</h2>
-                                <p class="animate__fadeInRightBig animate__animated">{{ data.info }}</p>
-                            </div>
+<div class="main container">
+    <div class="section-head container-md animate__fadeInDown animate__animated">
+        <h2>Remote Sensing Systems</h2>
+        <p>
+            By applying Deep Learning algorithms and ML techniques we transform high resolution, multispectral satellite
+            image data into powerful automated monitoring solutions that have broad applications in various industries.
+        </p>
+    </div>
+    <div class="bg">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs row justify-content-center">
+            <li [ngbNavItem]="data.id" class="col-lg-6 col-sm-12 text-center" *ngFor="let data of rss">
+                <a ngbNavLink>{{ data.title }}</a>
+                <ng-template ngbNavContent>
+                    <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
+                        <img [src]="data.cover" alt="" class="animate__fadeInLeft animate__animated">
+                        <div class="product">
+                            <h2 class="animate__fadeInUp animate__animated">{{ data.title }}</h2>
+                            <p class="animate__fadeInUp animate__animated">{{ data.info }}</p>
                         </div>
-                    </ng-template>
-                </li>
-            </ul>
-            <div [ngbNavOutlet]="nav"></div>
-        </div>
+                    </div>
+                </ng-template>
+            </li>
+        </ul>
+        <div [ngbNavOutlet]="nav"></div>
     </div>
 </div>

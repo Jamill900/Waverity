@@ -12,10 +12,12 @@
 .before-after {
     float: left;
 }
+
 img-comparison-slider {
     --divider-width: 2px;
     --divider-color: #c0c0c0;
     --default-handle-opacity: 0.3;
+    max-height: 500px;
   }
 
 .product h2 {
