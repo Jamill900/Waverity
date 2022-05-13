@@ -22,15 +22,15 @@
 }
 
 .news-card img {
-    border-radius: 3px 0 0 15px;
+    border-radius: 3px 15px 0 0;
 }
 
 .news-description {
-    padding: 30px 55px 30px 25px;
+    padding: 30px 25px 30px 25px;
     background: rgba(38, 38, 38, 0.7) !important;
     backdrop-filter: blur(3px) !important;
     width: 100%;
-    border-radius: 0 15px 3px 0;
+    border-radius: 0 0 3px 15px;
 }
 
 .news-description h3 {
@@ -65,6 +65,11 @@
     .news-card img {
         border-radius: 3px 0 0 15px;
         max-width: 300px;
+    }
+
+    .news-description {
+        padding: 30px 55px 30px 25px;
+        border-radius: 0 15px 3px 0;
     }
 }
 

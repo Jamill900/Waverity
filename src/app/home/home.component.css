@@ -35,6 +35,11 @@
   /* font-weight: 700; */
 }
 
+.main-btn:hover {
+  background: var(--blue) !important;
+  color: var(--white);
+}
+
 .news {
   margin-bottom: 30px;
 }
