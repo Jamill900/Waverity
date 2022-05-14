@@ -27,11 +27,11 @@ p {
     line-height: 199%;
 }
 
-.news {
+#news {
     background: rgba(56, 56, 56, 0.7)!important;
     backdrop-filter: blur(30px)!important;
-    padding: 40px;
-    border-radius: 5px 25px;
+    padding: 35px;
+    border-radius: 15px;
 }
 
 * {
@@ -41,5 +41,11 @@ p {
 @media only screen and (max-width: 768px) {
     img {
         width: 300px;
+        float: none;
+        margin-left: 0;
+        border-radius: 5px;
+    }
+    .news {
+        margin-top: 70px;
     }
 }

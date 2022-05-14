@@ -91,6 +91,10 @@ img-comparison-slider {
         width: 100%;
     }
 
+    .product p, .product h2 {
+        padding-left: 0;
+    }
+
      img{
         max-width: 300px;
     }
