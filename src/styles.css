@@ -68,13 +68,14 @@ html>div[style] {
 
 
 body {
-/* 	background: url(assets/images/bg-demo.png);
+	background: url(assets/images/bg-demo.png);
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	filter: brightness(65%); */
+	background-blend-mode: darken;
 	/* background: var(--dark) !important; */
-	background: #555;
+	/* background: #555; */
 	color: #fff;
 	margin: 0;
 	padding: 0;
