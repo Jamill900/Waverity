@@ -22,11 +22,12 @@ export class SliderComponent implements OnInit {
   settings = {
     autoplay: true,
     autoplaySpeed: 5000,
-    dots: false,
+    dots: true,
     fade: true,
+    cssEase: 'ease-in',
     arrows: true,
-    prevArrow: '<span class="prev" style="margin-right: 20px; cursor:pointer;"><img src="../../assets/images/left_arrow.svg"></span>',
-    nextArrow: '<span class="next" style="margin-left: 20px; cursor:pointer;"><img src="../../assets/images/right_arrow.svg"></span>',
+    prevArrow: '<span class="prev prev-hover" style="margin-right: 20px; cursor:pointer;"><img src="../../assets/images/left_arrow.svg"></span>',
+    nextArrow: '<span class="next next-hover" style="margin-left: 20px; cursor:pointer;"><img src="../../assets/images/right_arrow.svg"></span>',
   };
 
   ngOnInit(): void {

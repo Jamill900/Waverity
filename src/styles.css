@@ -93,6 +93,14 @@ video {
 	transform: rotateY(180deg);
 }
 
+.prev-hover, .next-hover {
+	filter: brightness(0.5);
+}
+
+.prev-hover:hover, .next-hover:hover {
+	filter: brightness(1);
+}
+
 .bg {
 	padding: 10px 0 40px 0;
 	background: rgba(38, 38, 38, 0.4) !important;
