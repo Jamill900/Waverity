@@ -91,7 +91,13 @@ img-comparison-slider {
         width: 100%;
     }
 
-    .product p, .product h2 {
+    .product p {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .product h2 {
+        font-size: 22px;
         padding-left: 0;
     }
 
