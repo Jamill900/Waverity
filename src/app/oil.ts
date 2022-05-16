@@ -4,4 +4,6 @@ export interface Oil {
     title: string;
     info: string;
     cover: string;
+    cover2: string;
+    cover3: string;
 }

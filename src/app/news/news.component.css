@@ -64,7 +64,7 @@
 @media only screen and (min-width: 768px) {
     .news-card img {
         border-radius: 3px 0 0 15px;
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .news-description {

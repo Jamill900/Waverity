@@ -25,6 +25,7 @@ p {
     letter-spacing: -0.02em;
     text-align: justify;
     line-height: 199%;
+    white-space: pre-line
 }
 
 #news {
@@ -47,5 +48,15 @@ p {
     }
     .news {
         margin-top: 70px;
+    }
+
+    p {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding-left: 0;
     }
 }

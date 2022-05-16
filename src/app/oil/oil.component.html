@@ -17,8 +17,8 @@
                     <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
                         <div *ngIf="data.id == 1 || data.id == 2" class="animate__fadeInLeft animate__animated">
                             <img-comparison-slider hover="hover">
-                                <img slot="first" src="../../assets/images/before.png" />
-                                <img slot="second" src="../../assets/images/after.png" />
+                                <img slot="first" src="{{ data.cover3 }}" />
+                                <img slot="second" src="{{ data.cover2 }}" />
                             </img-comparison-slider>
                         </div>
                         <img *ngIf="data.id > 2" [src]="data.cover" alt=""

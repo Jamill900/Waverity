@@ -105,6 +105,10 @@ iframe {
     margin-left: 10px;
 }
 
+.teQAzf {
+    margin: 0 !important;
+}
+
 @media (max-width: 768px) {
     .logo img {
         margin-bottom: 0px!important;

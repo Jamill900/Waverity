@@ -1,61 +1,31 @@
 [
     {   
         "id": 1,
-        "name": "Full Stack Developer",
+        "name": "Computational Geophysicist",
         "location": "Baku, Azerbaijan",
         "link": "https://jobsearch.az/vacancies/pasha-insurance-middle-front-end-proqramci"
     },
     {
         "id": 2,
-        "name": "Front-End Developer",
-        "location": "Remote",
+        "name": "Applied Geophysicist",
+        "location": "Baku, Azerbaijan",
         "link": ""
     },
     {
         "id": 3,
-        "name": "Product Designer",
-        "location": "New York, NY",
+        "name": "Geophysicist (Interpreter)",
+        "location": "Baku, Azerbaijan",
         "link": ""
     },
     {
         "id": 4,
-        "name": "Business Analyst",
+        "name": "Signal Processing Engineer",
         "location": "Baku, Azerbaijan",
         "link": ""
     },
     {
         "id": 5,
-        "name": "React Developer",
-        "location": "Remote",
-        "link": ""
-    },
-    {
-        "id": 6,
-        "name": "Mobile Developer",
-        "location": "New York, NY",
-        "link": ""
-    },
-    {
-        "id": 7,
-        "name": "Graphic Designer",
-        "location": "Baku, Azerbaijan",
-        "link": ""
-    },
-    {
-        "id": 8,
-        "name": "Flutter Developer",
-        "location": "Baku, Azerbaijan",
-        "link": ""
-    },
-    {
-        "id": 9,
-        "name": "Data Analyst",
-        "location": "Baku, Azerbaijan",
-        "link": ""
-    },
-    {
-        "id": 10,
-        "name": "UX/UI Designer",
+        "name": "Advance Data Science",
         "location": "Baku, Azerbaijan",
         "link": ""
     }
