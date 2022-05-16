@@ -123,6 +123,13 @@ iframe {
     .desktop {
         display: none !important;
     }
+
+    .nav-item {
+        text-align: center;
+    }
+    .navbar-nav {
+        margin: auto;
+    }
 }
 
 @media (min-width: 991px) {
