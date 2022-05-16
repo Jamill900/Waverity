@@ -69,8 +69,8 @@ html>div[style] {
 
 body {
 	background: url('assets/images/bg-demo.png');
-	background-size: cover;
-	background-position: center;
+	background-size: auto 1000px;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	color: #fff;
