@@ -2,7 +2,7 @@
     <div *ngIf="news" class="container news">
         <div id="news">
             <img [src]="news.cover" width="auto" class="animate__fadeInLeft animate__animated">
-            <span class="animate__fadeInUp animate__animated">{{ news.date }}</span>
+            <span class="animate__fadeInUp animate__animated"><br>{{ news.date }}</span>
             <h2 class="animate__fadeInUp animate__animated">{{ news.title }}</h2>
             <p class="animate__fadeInUp animate__animated">{{ news.info }}</p>
         </div>
