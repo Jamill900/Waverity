@@ -16,7 +16,8 @@
 img-comparison-slider {
     --divider-width: 2px;
     --divider-color: var(--dark);
-    --default-handle-opacity: 0.3;
+    --default-handle-opacity: 1;
+    --default-handle-color: var(--dark);
     max-height: 500px;
     max-width: 600px;
   }
