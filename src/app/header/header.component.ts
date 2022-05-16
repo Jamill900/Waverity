@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,9 +8,15 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HeaderComponent implements OnInit {
 
-  closeResult: string;
-
   constructor(private modalService: NgbModal) { }
+
+  @HostListener('document:click', ['$event'])
+  clickout(event: any) {
+    let element: HTMLElement = document.getElementsByClassName( 'navbar-toggler' )[ 0 ] as HTMLElement;
+    if ( element.getAttribute( 'aria-expanded' ) == 'true' ) {
+        element.click();
+    }
+  }
 
   ngOnInit(): void {
   }

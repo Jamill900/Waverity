@@ -4,7 +4,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="navbar collapse navbar-collapse mt-3" id="navbarSupportedContent">
+      <div class="navbar collapse navbar-collapse mt-3 desktop" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item dropdown active">
             <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="{'active': oilLink.isActive || rssLink.isActive || customLink.isActive}">
@@ -15,6 +15,34 @@
               <li><a class="dropdown-item" routerLink="/rss/1" [routerLinkActive]="['active']" #rssLink="routerLinkActive" (click)="toggleNavBar()" >Remote Sensing Systems</a></li>
               <li><a class="dropdown-item" routerLink="/custom/1" [routerLinkActive]="['active']" #customLink="routerLinkActive" (click)="toggleNavBar()" >Custom Solutions</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="toggleNavBar()" routerLink="/news" [routerLinkActive]="['active']">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="toggleNavBar()" routerLink="/about" [routerLinkActive]="['active']">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="toggleNavBar()" routerLink="/careers" [routerLinkActive]="['active']">Careers</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" (click)="openScrollableContent(longContent)">Contact Us</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" (click)="toggleNavBar()" (click)="openScrollableContent(longContent)">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar collapse navbar-collapse mt-3 mobile" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/oil/1" [routerLinkActive]="['active']" #oilLink="routerLinkActive" (click)="toggleNavBar()" >Oil and Gas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/rss/1" [routerLinkActive]="['active']" #rssLink="routerLinkActive" (click)="toggleNavBar()" >Remote Sensing Systems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/custom/1" [routerLinkActive]="['active']" #customLink="routerLinkActive" (click)="toggleNavBar()" >Custom Solutions</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" (click)="toggleNavBar()" routerLink="/news" [routerLinkActive]="['active']">News</a>
