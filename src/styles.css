@@ -68,11 +68,13 @@ html>div[style] {
 
 
 body {
-	background: url('assets/images/bg-demo.png');
-	background-size: auto 1000px;
+	background: url(assets/images/bg-demo.png);
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background: var(--dark) !important;
+	background: #555;
 	color: #fff;
 	margin: 0;
 	padding: 0;
@@ -80,7 +82,6 @@ body {
 }
 
 video {
-	display: none;
 	object-fit: cover;
 	width: 100vw;
 	height: 100vh;
