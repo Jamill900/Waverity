@@ -50,6 +50,9 @@
 }
 
 .news-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 30px 35px 0 35px;
   background: rgba(38, 38, 38, 0.7)!important;
   backdrop-filter: blur(3px)!important;
@@ -70,7 +73,6 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -0.02em;
-  padding-bottom: 20px;
 }
 
 .news-description h4 {

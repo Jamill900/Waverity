@@ -105,9 +105,9 @@ a:hover {
     transition-duration: 300ms;
 }
 
-.banner-img img{
-    width:490px;
-    height:427px;
+.banner-img img {
+    max-width: 580px !important;
+    height: 400px !important;
 }
 
 
