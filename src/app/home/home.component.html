@@ -32,7 +32,7 @@
                 *ngFor="let data of news | paginate: {itemsPerPage: 3, currentPage: p};">
                 <img src="{{ data.cover  }}" alt="">
                 <div class="news-description">
-                    <h3>{{ (data.title.length > 60)? (data.title | slice:0:60)+'...':(data.title) }}</h3>
+                    <h3>{{ (data.title.length > 65)? (data.title | slice:0:65)+'...':(data.title) }}</h3>
                     <p>{{ data.info | slice:0:250 }}...</p>
                     <div class="d-flex flex-row justify-content-between align-items-center mb-4">
                         <h4>{{ data.date }}</h4>
