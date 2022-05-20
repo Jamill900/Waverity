@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Computational Geophysicist",
         "location": "Baku, Azerbaijan",
-        "link": "https://jobsearch.az/vacancies/pasha-insurance-middle-front-end-proqramci"
+        "link": ""
     },
     {
         "id": 2,
@@ -26,6 +26,12 @@
     {
         "id": 5,
         "name": "Advance Data Science",
+        "location": "Baku, Azerbaijan",
+        "link": ""
+    },
+    {
+        "id": 6,
+        "name": "Applied Geologist",
         "location": "Baku, Azerbaijan",
         "link": ""
     }
