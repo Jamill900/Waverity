@@ -26,6 +26,10 @@
     text-align: left;
 }
 
+.vacancy:last-child h3 {
+    width: 190px;
+}
+
 .vacancy h4 {
     font-weight: 500;
     font-size: 14px;
