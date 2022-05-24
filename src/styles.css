@@ -10,9 +10,6 @@
 	--blue: #ff5500;
 }
 
-html>div[style] {
-	display: none !important;
-}
 
 * {
 	font-family: "Poppins";
@@ -22,7 +19,13 @@ html>div[style] {
 	color: #fff;
 	padding: 0;
 	margin: 0;
+	z-index: 1;
 	user-select: text !important;
+}
+
+.section {
+	position: relative;
+	z-index: 999 !important;
 }
 
 /* Templates */
@@ -82,6 +85,7 @@ body {
 }
 
 video {
+	z-index: 0 !important;
 	object-fit: cover;
 	width: 100vw;
 	height: 100vh;
@@ -145,6 +149,9 @@ section {
 
 .section>button {
 	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 	margin: 10px auto 40px auto;
 	border-radius: 3px 15px 3px 15px;
 	padding: 20px 55px;
