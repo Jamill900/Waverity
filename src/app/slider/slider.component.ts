@@ -22,7 +22,7 @@ export class SliderComponent implements OnInit {
   settings = {
     autoplay: true,
     autoplaySpeed: 5000,
-    dots: true,
+    dots: false,
     fade: true,
     cssEase: 'ease-in',
     arrows: true,

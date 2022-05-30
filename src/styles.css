@@ -28,6 +28,14 @@
 	z-index: 999 !important;
 }
 
+.modal-dialog-scrollable .modal-content {
+    filter: invert(1);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
 /* Templates */
 
 .button {
