@@ -29,18 +29,22 @@
 }
 
 .modal-dialog-scrollable .modal-content {
-    filter: invert(1);
+	filter: invert(1);
+}
+
+.modal-content {
+	height: 90vh;
 }
 
 body.modal-open {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 /* Templates */
 
 .button {
 	background: rgba(72, 72, 72, 0.7);
-    backdrop-filter: blur(30px);
+	backdrop-filter: blur(30px);
 	border: none;
 	border-radius: 3px 10px;
 	padding: 20px 55px;
@@ -61,13 +65,27 @@ body.modal-open {
 	font-weight: 400;
 	letter-spacing: -0.02e;
 	color: var(--white);
-	cursor: pointer;	
+	cursor: pointer;
 }
 
-.button:hover, .button-small:hover {
+.button:hover,
+.button-small:hover {
 	color: var(--dark);
 	background: var(--white);
 	transition-duration: 300ms;
+}
+
+
+.backdrop-header {
+	background: rgba(0, 0, 0, 0.85) !important;
+}
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+	.backdrop-header {
+		background: rgba(0, 0, 0, 0.4) !important;
+		-webkit-backdrop-filter: blur(6px) !important;
+		backdrop-filter: blur(6px) !important;
+	}
 }
 
 /* End */
@@ -105,11 +123,13 @@ video {
 	transform: rotateY(180deg);
 }
 
-.prev-hover, .next-hover {
+.prev-hover,
+.next-hover {
 	filter: brightness(0.5);
 }
 
-.prev-hover:hover, .next-hover:hover {
+.prev-hover:hover,
+.next-hover:hover {
 	filter: brightness(1);
 }
 

@@ -3,36 +3,42 @@
         "id": 1,
         "name": "Computational Geophysicist",
         "location": "Baku, Azerbaijan",
-        "link": ""
+        "link": "https://forms.gle/U54VbCv1ubuCv2DS6"
     },
     {
         "id": 2,
         "name": "Applied Geophysicist",
         "location": "Baku, Azerbaijan",
-        "link": ""
+        "link": "https://forms.gle/U54VbCv1ubuCv2DS6"
     },
     {
         "id": 3,
         "name": "Geophysicist (Interpreter)",
         "location": "Baku, Azerbaijan",
-        "link": ""
+        "link": "https://forms.gle/U54VbCv1ubuCv2DS6"
     },
     {
         "id": 4,
         "name": "Signal Processing Engineer",
         "location": "Baku, Azerbaijan",
-        "link": ""
+        "link": "https://forms.gle/U54VbCv1ubuCv2DS6"
     },
     {
         "id": 5,
         "name": "Advance Data Science",
         "location": "Baku, Azerbaijan",
-        "link": ""
+        "link": "https://forms.gle/U54VbCv1ubuCv2DS6"
     },
     {
         "id": 6,
         "name": "Applied Geologist",
         "location": "Baku, Azerbaijan",
-        "link": ""
+        "link": "https://forms.gle/U54VbCv1ubuCv2DS6"
+    },
+    {
+        "id": 7,
+        "name": "Well Planner",
+        "location": "Baku, Azerbaijan",
+        "link": "https://forms.gle/U54VbCv1ubuCv2DS6"
     }
 ]
