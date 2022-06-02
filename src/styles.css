@@ -38,6 +38,11 @@
 
 body.modal-open {
 	overflow: hidden;
+	overflow-x: hidden;
+}
+
+.modal-body {
+	padding: 0;
 }
 
 /* Templates */
