@@ -37,12 +37,14 @@
 }
 
 body.modal-open {
-	overflow: hidden;
+	overflow-y: hidden;
 	overflow-x: hidden;
 }
 
+
 .modal-body {
 	padding: 0;
+	margin: 0;
 }
 
 /* Templates */

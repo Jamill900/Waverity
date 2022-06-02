@@ -14,6 +14,7 @@
     margin-right: 20px;
 }
 
+
 * {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -28,6 +29,14 @@ nav {
 .dropdown-menu {
     background: rgba(0, 0, 0, 0.7) !important;
     backdrop-filter: blur(12px) !important;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 
@@ -98,14 +107,6 @@ nav {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: none;
-}
-
-iframe {
-    margin-left: 10px;
-}
-
-.teQAzf {
-    margin: 0 !important;
 }
 
 @media (max-width: 768px) {
