@@ -30,7 +30,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TabsModule } from 'ngx-tabset';
 import { NgxImageComparisonSliderModule } from 'ngx-image-comparison-slider';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -69,7 +69,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     NgxImageComparisonSliderModule
     
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
