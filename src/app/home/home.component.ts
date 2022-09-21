@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
   getNews(){
     this.loading = true;
     this.newsService.getNews().subscribe( news => {
-        this.news = news;
+        this.news = news.reverse();
       })
   }
 
