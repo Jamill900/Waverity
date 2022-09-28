@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openScrollableContent(longContent: any) {
-    this.modalService.open(longContent, { scrollable: true });
+  openLg(content: any) {
+    this.modalService.open(content, { size: 'lg' });
   }
 }

@@ -6,7 +6,7 @@
         <li><a routerLink="/about" routerLinkActive="active">About</a></li>
         <li><a routerLink="/careers" routerLinkActive="active">Careers</a></li>
       </ul>
-    <div id="contact-button"><button (click)="openScrollableContent(longContent)">Contact Us</button></div>
+    <div id="contact-button"><button (click)="openLg(content)">Contact Us</button></div>
   </footer>
   <div class="container credits">
     <h5>2022 © WAVERITY. All rights reserved.</h5>
@@ -15,14 +15,52 @@
 </div>
 
 
-<ng-template #longContent let-modal>
+<ng-template #content let-modal>
   <div class="modal-header">
-    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+      <h4 class="modal-title">Contact Us</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9L1eOLVN0dXGawbtY-c_m98wdAYlTE70lUK4FdF0Dj9VoQQ/viewform?embedded=true" width="98%" height="95%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <form action="https://formsubmit.co/61851e3fc3bbdc85f94af741a3519bd0" method="POST">
+          <div class="form-row">
+              <div class="input-data">
+                  <input type="text" name="First Name" style="color: #000;" required>
+                  <div class="underline"></div>
+                  <label for="">First Name</label>
+              </div>
+              <div class="input-data">
+                  <input type="text" name="Last Name" required>
+                  <div class="underline"></div>
+                  <label for="">Last Name</label>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="input-data">
+                  <input type="email" name="Email" required>
+                  <div class="underline"></div>
+                  <label for="">Email Address</label>
+              </div>
+              <div class="input-data">
+                  <input type="phone" name="phone" required>
+                  <div class="underline"></div>
+                  <label for="">Phone Number</label>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="input-data textarea">
+                  <textarea rows="8" cols="80" name="message" required></textarea>
+                  <br />
+                  <div class="underline"></div>
+                  <label for="">Write your message</label>
+                  <br />
+              </div>
+          </div>
+          <div class="button-submit">
+              <button><input class="submit" type="submit" value="Submit"></button>
+          </div>
+      </form>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+      <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
   </div>
 </ng-template>

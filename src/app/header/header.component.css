@@ -7,17 +7,11 @@
 
 .logo img {
     margin-right: 10px;
-    margin-bottom: 20px!important;
+    margin-bottom: 20px !important;
 }
 
 .navbar-nav {
     margin-right: 20px;
-}
-
-
-* {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
 }
 
 
@@ -111,7 +105,7 @@ nav {
 
 @media (max-width: 768px) {
     .logo img {
-        margin-bottom: 0px!important;
+        margin-bottom: 0px !important;
     }
 
     nav {
@@ -131,6 +125,7 @@ nav {
     .nav-item {
         text-align: center;
     }
+
     .navbar-nav {
         margin: auto;
     }
