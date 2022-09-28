@@ -2,8 +2,9 @@
     <div class="section-head container-md animate__fadeInDown animate__animated">
         <h2>Remote Sensing Systems</h2>
         <p>
-            By applying Deep Learning algorithms and ML techniques we transform high resolution, multispectral satellite
-            image data into powerful automated monitoring solutions that have broad applications in various industries.
+            By applying Deep Learning algorithms and ML techniques, we transform high resolution, multispectral
+            satellite image data into powerful automated monitoring solutions that have broad applications in various
+            industries.
         </p>
     </div>
     <div class="bg">
@@ -11,7 +12,8 @@
             <li [ngbNavItem]="data.id" class="col-lg-6 col-sm-12 text-center" *ngFor="let data of rss">
                 <a ngbNavLink>{{ data.title }}</a>
                 <ng-template ngbNavContent>
-                    <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
+                    <div
+                        class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
                         <div *ngIf="data.id == 1" class="animate__fadeInLeft animate__animated">
                             <img-comparison-slider hover="hover">
                                 <img slot="first" src="{{ data.cover3 }}" />
@@ -19,7 +21,7 @@
                             </img-comparison-slider>
                         </div>
                         <img *ngIf="data.id > 1" [src]="data.cover" alt=""
-                                class="animate__fadeInLeft animate__animated">
+                            class="animate__fadeInLeft animate__animated">
                         <div class="product">
                             <h2 class="animate__fadeInUp animate__animated">{{ data.title }}</h2>
                             <p class="animate__fadeInUp animate__animated">{{ data.info }}</p>

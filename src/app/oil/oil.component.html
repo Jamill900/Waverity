@@ -3,10 +3,9 @@
         <h2>Oil and Gas</h2>
         <div class="hr"></div>
         <p>
-            We have five products in our oil and gas portfolio that focus on addressing pressing technical challenges of
+            We have five products in our oil and gas portfolio that focus on addressing pressing technical challenges in
             the industry with a wide application of Deep Learning and Signal Processing algorithms combined with domain
             knowledge.
-
         </p>
     </div>
     <div class="bg mb-5">
@@ -14,7 +13,8 @@
             <li class="col-lg-4 col-md-6 col-sm-12 text-center" *ngFor="let data of oil" [ngbNavItem]="data.id">
                 <a ngbNavLink>{{ data.button }}</a>
                 <ng-template ngbNavContent>
-                    <div class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
+                    <div
+                        class="d-flex flex-lg-row flex-md-column flex-sm-column flex-column justify-content-center align-items-center">
                         <div *ngIf="data.id == 1 || data.id == 2" class="animate__fadeInLeft animate__animated">
                             <img-comparison-slider hover="hover">
                                 <img slot="first" src="{{ data.cover3 }}" />
@@ -22,7 +22,7 @@
                             </img-comparison-slider>
                         </div>
                         <img *ngIf="data.id > 2" [src]="data.cover" alt=""
-                                class="animate__fadeInLeft animate__animated">
+                            class="animate__fadeInLeft animate__animated">
                         <div class="product">
                             <h2 class="animate__fadeInUp animate__animated">{{ data.title }}</h2>
                             <p class="animate__fadeInUp animate__animated">{{ data.info }}</p>
