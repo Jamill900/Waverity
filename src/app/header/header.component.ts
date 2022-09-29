@@ -21,16 +21,16 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openLg(content: any) {
-    this.modalService.open(content, {size: 'lg' });
-  }
-
+  
   toggleNavBar () {
     let element: HTMLElement = document.getElementsByClassName( 'navbar-toggler' )[ 0 ] as HTMLElement;
     if ( element.getAttribute( 'aria-expanded' ) == 'true' ) {
-        element.click();
+      element.click();
     }
-}
-
+  }
+  
+  openLg(content: any) {
+    this.modalService.open(content, {size: 'lg' });
+  }
   
 }

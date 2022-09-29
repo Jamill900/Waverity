@@ -1,109 +1,117 @@
 <nav class="navbar backdrop-header fixed-top navbar-expand-lg navbar-dark animate__fadeInDown animate__animated">
-    <div class="container">
-      <a class="navbar-brand logo" routerLink="/home"><img src="assets/images/logo2.svg" alt="" width="100px"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar collapse navbar-collapse mt-3 desktop" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item dropdown active">
-            <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" [ngClass]="{'active': oilLink.isActive || rssLink.isActive || customLink.isActive}">
-              Solutions
-            </a>
-            <ul class="dropdown-menu animate__fadeIn animate__animated" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="/oil/1" [routerLinkActive]="['active']" #oilLink="routerLinkActive" (click)="toggleNavBar()" >Oil and Gas</a></li>
-              <li><a class="dropdown-item" routerLink="/rss/1" [routerLinkActive]="['active']" #rssLink="routerLinkActive" (click)="toggleNavBar()" >Remote Sensing Systems</a></li>
-              <li><a class="dropdown-item" routerLink="/custom/1" [routerLinkActive]="['active']" #customLink="routerLinkActive" (click)="toggleNavBar()" >Custom Solutions</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="toggleNavBar()" routerLink="/news" [routerLinkActive]="['active']">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="toggleNavBar()" routerLink="/about" [routerLinkActive]="['active']">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="toggleNavBar()" routerLink="/careers" [routerLinkActive]="['active']">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="toggleNavBar()" (click)="openLg(content)">Contact Us</a>
-          </li>
-        </ul>
+  <div class="container">
+    <a class="navbar-brand logo" routerLink="/home"><img src="assets/images/logo2.svg" alt="" width="100px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar collapse navbar-collapse mt-3 desktop" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item dropdown active">
+          <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+            [ngClass]="{'active': oilLink.isActive || rssLink.isActive || customLink.isActive}">
+            Solutions
+          </a>
+          <ul class="dropdown-menu animate__fadeIn animate__animated" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/oil/1" [routerLinkActive]="['active']" #oilLink="routerLinkActive"
+                (click)="toggleNavBar()">Oil and Gas</a></li>
+            <li><a class="dropdown-item" routerLink="/rss/1" [routerLinkActive]="['active']" #rssLink="routerLinkActive"
+                (click)="toggleNavBar()">Remote Sensing Systems</a></li>
+            <li><a class="dropdown-item" routerLink="/custom/1" [routerLinkActive]="['active']"
+                #customLink="routerLinkActive" (click)="toggleNavBar()">Custom Solutions</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavBar()" routerLink="/news" [routerLinkActive]="['active']">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavBar()" routerLink="/about" [routerLinkActive]="['active']">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavBar()" routerLink="/careers" [routerLinkActive]="['active']">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavBar()" (click)="openLg(content)">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar collapse navbar-collapse mt-3 mobile" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/oil/1" [routerLinkActive]="['active']" #oilLink="routerLinkActive"
+            (click)="toggleNavBar()">Oil and Gas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/rss/1" [routerLinkActive]="['active']" #rssLink="routerLinkActive"
+            (click)="toggleNavBar()">Remote Sensing Systems</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/custom/1" [routerLinkActive]="['active']" #customLink="routerLinkActive"
+            (click)="toggleNavBar()">Custom Solutions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavBar()" routerLink="/news" [routerLinkActive]="['active']">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavBar()" routerLink="/about" [routerLinkActive]="['active']">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavBar()" routerLink="/careers" [routerLinkActive]="['active']">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="toggleNavBar()" (click)="openLg(content)">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Contact Us</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <form ngNoForm target="_blank" action="https://formsubmit.co/support@waverity.ai" method="POST">
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" name="First Name" required>
+          <div class="underline"></div>
+          <label for="">First Name</label>
+        </div>
+        <div class="input-data">
+          <input type="text" name="Last Name" required>
+          <div class="underline"></div>
+          <label for="">Last Name</label>
+        </div>
       </div>
-      <div class="navbar collapse navbar-collapse mt-3 mobile" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/oil/1" [routerLinkActive]="['active']" #oilLink="routerLinkActive" (click)="toggleNavBar()" >Oil and Gas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/rss/1" [routerLinkActive]="['active']" #rssLink="routerLinkActive" (click)="toggleNavBar()" >Remote Sensing Systems</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/custom/1" [routerLinkActive]="['active']" #customLink="routerLinkActive" (click)="toggleNavBar()" >Custom Solutions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="toggleNavBar()" routerLink="/news" [routerLinkActive]="['active']">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="toggleNavBar()" routerLink="/about" [routerLinkActive]="['active']">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="toggleNavBar()" routerLink="/careers" [routerLinkActive]="['active']">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" (click)="toggleNavBar()" (click)="openLg(content)">Contact Us</a>
-          </li>
-        </ul>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="email" name="Email" required>
+          <div class="underline"></div>
+          <label for="">Email Address</label>
+        </div>
+        <div class="input-data">
+          <input type="phone" name="phone" required>
+          <div class="underline"></div>
+          <label for="">Phone Number</label>
+        </div>
       </div>
-    </div>
-  </nav>
-  
-  <ng-template #content let-modal>
-    <div class="modal-header">
-        <h4 class="modal-title">Contact Us</h4>
-        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-    </div>
-    <div class="modal-body">
-        <form action="https://formsubmit.co/support@waverity.ai" method="POST">
-            <div class="form-row">
-                <div class="input-data">
-                    <input type="text" name="First Name" required>
-                    <div class="underline"></div>
-                    <label for="">First Name</label>
-                </div>
-                <div class="input-data">
-                    <input type="text" name="Last Name" required>
-                    <div class="underline"></div>
-                    <label for="">Last Name</label>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="input-data">
-                    <input type="email" name="Email" required>
-                    <div class="underline"></div>
-                    <label for="">Email Address</label>
-                </div>
-                <div class="input-data">
-                    <input type="phone" name="phone" required>
-                    <div class="underline"></div>
-                    <label for="">Phone Number</label>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="input-data textarea">
-                    <textarea rows="8" cols="80" name="message" required></textarea>
-                    <br />
-                    <div class="underline"></div>
-                    <label for="">Write your message</label>
-                    <br />
-                </div>
-            </div>
-            <div class="button-submit">
-                <button><input class="submit" type="submit" value="Submit"></button>
-            </div>
-        </form>
-    </div>
-    <div class="modal-footer">
-        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
-    </div>
+      <div class="form-row">
+        <div class="input-data textarea">
+          <textarea rows="8" cols="80" name="message" required></textarea>
+          <br />
+          <div class="underline"></div>
+          <label for="">Write your message</label>
+          <br />
+        </div>
+      </div>
+      <div class="button-submit">
+        <button><input class="submit" type="submit" value="Submit"></button>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+  </div>
 </ng-template>
