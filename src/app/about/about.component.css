@@ -67,7 +67,8 @@ h6 {
 
     iframe {
         width: 100%;
-        min-width: 300px !important;
+        min-width: 200px !important;
+        height: auto;
     }
 
     .border-end {
