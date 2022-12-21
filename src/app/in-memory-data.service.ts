@@ -49,19 +49,19 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 1,
         button: 'S.I.Q.E',
         title: 'Seismic Image Quality Enhancement (S.I.Q.E)',
-        info: 'SIQE technology enables to achieve significant enhancement in vertical resolution and Signal-to-Noise Ratio (SNR) improvement for both 2D and 3D seismic data of any quality. Unlike conventional approaches, Deep learning based SIQE does not require the availability of well data or any prior geological interpretation. As the result of SIQE seismic data enhancement, specialists are able to better comprehend and mitigate their risks during the major well planning activities throughout the different stages of the field development starting from exploration to depletion.',
-        cover: 'assets/images/oil1.gif',
-        cover2: 'assets/images/oil1after.gif',
-        cover3: 'assets/images/oil1before.gif'
+        info: 'S.I.Q.E technology enables to achieve significant enhancement in vertical resolution and Signal-to-Noise Ratio (SNR) improvement for both 2D and 3D seismic data of any quality. Unlike conventional approaches, Deep learning based S.I.Q.E does not require the availability of well data or any prior geological interpretation. As the result of S.I.Q.E seismic data enhancement, specialists are able to better comprehend and mitigate their risks during the major well planning activities throughout the different stages of the field development starting from exploration to depletion.',
+        cover: 'assets/images/siqe.png',
+        cover2: 'assets/images/siqe_1.jpg',
+        cover3: 'assets/images/siqe_2.jpg'
       },
       {
         id: 2,
         button: 'S.I.N.A',
         title: 'Seismic Image Noise Attenuation (S.I.N.A)',
-        info: 'The application of SINA technology allows subject matter experts to more clearly differentiate structural geological features, especially fault propagation in 3D via achieving notable improvement in Signal-to-Noise Ratio (SNR). The deep learning engine of SINA recognizes and removes different types of noises including random, coherent, colored, structural/orientation and gaussian noises present in seismic data without distorting the original seismic response.',
-        cover: 'assets/images/oil2.gif',
-        cover2: 'assets/images/oil2after.gif',
-        cover3: 'assets/images/oil2before.gif'
+        info: 'The application of S.I.N.A technology allows subject matter experts to more clearly differentiate structural geological features, especially fault propagation in 3D via achieving notable improvement in Signal-to-Noise Ratio (SNR). The deep learning engine of S.I.N.A recognizes and removes different types of noises including random, coherent, colored, structural/orientation and gaussian noises present in seismic data without distorting the original seismic response.',
+        cover: 'assets/images/sina.png',
+        cover2: 'assets/images/sina_1.jpg',
+        cover3: 'assets/images/sina_2.jpg'
       },
       {
         id: 3,

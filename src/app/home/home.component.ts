@@ -3,6 +3,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { News } from '../news';
 import { NewsService } from '../news.service';
 import { NgwWowService } from 'ngx-wow'
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,7 @@ export class HomeComponent implements OnInit {
   ;
 
   constructor(private newsService: NewsService,
-    private wowService: NgwWowService) {
+    private wowService: NgwWowService, private modalService: NgbModal) {
      }
 
   ngOnInit() :void {
@@ -36,6 +37,10 @@ export class HomeComponent implements OnInit {
 
   scrollToElement(element: any): void{
     element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
+  openLg(content: any) {
+    this.modalService.open(content, {size: 'lg' });
   }
 
 }

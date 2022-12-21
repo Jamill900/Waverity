@@ -377,6 +377,10 @@ pagination-template .ngx-pagination li.pagination-previous::before {
 	color: #000 !important;
 }
 
+.iframe {
+	filter: invert(1) !important;
+}
+
 .text {
 	text-align: center;
 	font-size: 35px;
