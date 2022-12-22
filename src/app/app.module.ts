@@ -66,7 +66,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     ScrollToModule,
     SlickCarouselModule,
     TabsModule.forRoot(),
-    NgxImageComparisonSliderModule
+    NgxImageComparisonSliderModule,
+    
     
   ],
   providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],

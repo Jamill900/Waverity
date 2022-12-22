@@ -377,9 +377,9 @@ pagination-template .ngx-pagination li.pagination-previous::before {
 	color: #000 !important;
 }
 
-.iframe {
+/* .iframe {
 	filter: invert(1) !important;
-}
+} */
 
 .text {
 	text-align: center;
@@ -528,3 +528,5 @@ input[type=text]::placeholder {
 .button-submit button:hover .submit {
 	color: #000;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

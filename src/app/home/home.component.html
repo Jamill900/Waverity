@@ -2,7 +2,7 @@
     <div class="intro container">
         <div class="wow animate__fadeInUp animate__animated" id="intro-caption">
             <h1>Every <span>Detail</span> has an <span>impact</span></h1>
-            <button class="button main-btn" (click)="openLg(content)">Watch Video</button>
+            <button class="button main-btn" routerLink="/about">Learn More</button>
         </div>
     </div>
 </section>
@@ -50,18 +50,20 @@
 </section>
 
 
-<ng-template #content let-modal>
+<!-- <iframe *ngIf="isVideoOpened" class="m-auto" width="100%" height="415" src="https://www.youtube.com/embed/oeGOdbIfXIk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> -->
+
+<!-- <ng-template #content let-modal>
     <div class="modal-header video-iframe">
         <h4 class="modal-title"></h4>
         <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
     </div>
     <div class="modal-body">
-        <iframe class="iframe m-auto" width="100%" height="415" src="https://www.youtube.com/embed/oeGOdbIfXIk" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
     </div>
-</ng-template>
+</ng-template> -->

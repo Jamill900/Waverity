@@ -17,7 +17,8 @@ export class HomeComponent implements OnInit {
   p: number = 1;
 
   loading = false;
-  ;
+  
+  isVideoOpened: boolean = false;
 
   constructor(private newsService: NewsService,
     private wowService: NgwWowService, private modalService: NgbModal) {
@@ -28,6 +29,13 @@ export class HomeComponent implements OnInit {
     this.wowService.init();
     
   }
+
+  openVideo() {
+    this.isVideoOpened = !this.isVideoOpened;
+    console.log(this.isVideoOpened)
+  }
+
+
   getNews(){
     this.loading = true;
     this.newsService.getNews().subscribe( news => {
