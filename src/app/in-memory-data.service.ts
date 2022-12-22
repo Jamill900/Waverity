@@ -51,8 +51,8 @@ export class InMemoryDataService implements InMemoryDbService {
         title: 'Seismic Image Quality Enhancement (S.I.Q.E.)',
         info: 'S.I.Q.E. technology enables to achieve significant enhancement in vertical resolution and Signal-to-Noise Ratio (SNR) improvement for both 2D and 3D seismic data of any quality. Unlike conventional approaches, Deep learning based S.I.Q.E. does not require the availability of well data or any prior geological interpretation. As the result of S.I.Q.E. seismic data enhancement, specialists are able to better comprehend and mitigate their risks during the major well planning activities throughout the different stages of the field development starting from exploration to depletion.',
         cover: 'assets/images/siqe.png',
-        cover2: 'assets/images/siqe_1.jpg',
-        cover3: 'assets/images/siqe_2.jpg'
+        cover2: 'assets/images/siqe_2.jpg',
+        cover3: 'assets/images/siqe_1.jpg'
       },
       {
         id: 2,
@@ -60,8 +60,8 @@ export class InMemoryDataService implements InMemoryDbService {
         title: 'Seismic Image Noise Attenuation (S.I.N.A.)',
         info: 'The application of S.I.N.A. technology allows subject matter experts to more clearly differentiate structural geological features, especially fault propagation in 3D via achieving notable improvement in Signal-to-Noise Ratio (SNR). The deep learning engine of S.I.N.A. recognizes and removes different types of noises including random, coherent, colored, structural/orientation and gaussian noises present in seismic data without distorting the original seismic response.',
         cover: 'assets/images/sina.png',
-        cover2: 'assets/images/sina_1.jpg',
-        cover3: 'assets/images/sina_2.jpg'
+        cover2: 'assets/images/sina_2.jpg',
+        cover3: 'assets/images/sina_1.jpg'
       },
       {
         id: 3,
