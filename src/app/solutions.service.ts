@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Custom } from './custom';
 import { Oil } from './oil';
 import { Rss } from './rss';
+import { Career } from './careers';
 
 @Injectable({
   providedIn: 'root'
@@ -15,6 +16,11 @@ export class SolutionsService {
   private oilUrl = 'api/oil';
   private rssUrl = 'api/rss';
   private customUrl = 'api/custom';
+  private careersUrl = 'api/careers';
+
+  getCareers(): Observable<Career[]> {
+    return this.http.get<Career[]>(this.careersUrl);
+  }
 
   getOilSolutions(): Observable<Oil[]> {
     return this.http.get<Oil[]>(this.oilUrl);
