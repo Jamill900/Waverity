@@ -24,7 +24,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 3,
         cover: 'assets/images/oil2.gif',
-        title: 'The next product of WAVERITY: Improvement of SNR based on seismic Image Noise Attenuation (S.I.N.A.) technique',
+        title: 'The next product of WAVERITY: Improvement of SNR based on Seismic Image Noise Attenuation (S.I.N.A.) technique',
         info: 'WAVERITY team developed an in-house tool for increasing the signal-to-noise ratio (SNR) of seismic reflectivity data. The methodology employs deep learning algorithms which efficiently manage the conditioning of corrupted images, decreasing or completely removing various types of noise, including random, coherent, colored, and structural/orientation noises.\n\n Among the benefits of the proposed methodology is its superiority over conventional filtering methods such as f-x deconvolution and structural filtering, as S.I.N.A. increases the data quality without affecting the seismic events themselves. Unlike conventional methods, the developed algorithm does not require a lot of parameterizations and the desired output can be obtained within a short time interval. Moreover, it is important to note that this methodology does not need any well data and completely depends only on the original seismic data.\n\n The robustness of S.I.N.A. has been tested on a number of open-source data as well as on several real fields from the South Caspian Basin, such as Azeri-Chirag-Guneshli and Shah Deniz. As a result, specialists are able to improve their interpretation and enhance field understanding by upgrading the visibility of the geological objects.',
         date: '19 April 2022'
       },

@@ -1,5 +1,4 @@
-import { Subscription } from 'rxjs';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { News } from '../news';
 import { NewsService } from '../news.service';
 import { NgwWowService } from 'ngx-wow'
