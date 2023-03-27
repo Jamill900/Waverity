@@ -53,6 +53,10 @@ video {
 	transform: rotateY(180deg);
 }
 
+.socials {
+	z-index: 999 !important;
+}
+
 .prev-hover,
 .next-hover {
 	filter: brightness(0.5);
@@ -528,5 +532,13 @@ input[type=text]::placeholder {
 .button-submit button:hover .submit {
 	color: #000;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}

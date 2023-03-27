@@ -90,9 +90,9 @@ a.active {
 
 /* credits */
 .credits {
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-between; */
+  justify-content: space-between;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 10px;
@@ -145,4 +145,27 @@ a.active {
     padding-bottom: 20px;
   }
 
+  .credits {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials {
+    margin-right: 0px;
+  }
+
 }
+
+svg {
+  fill: #fff;
+  transition: all .2s linear;
+}
+
+svg:hover {
+  fill: var(--blue) !important;
+}
+
+.socials {
+  margin-right: 40px;
+}
+
