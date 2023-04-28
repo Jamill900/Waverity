@@ -137,48 +137,48 @@ export class InMemoryDataService implements InMemoryDbService {
     ];
 
     let careers = [
-      {   
+      {
         id: 1,
         name: 'Computational\nGeophysicist',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2063/CHWZG24AES9N9RKYY2'
-    },
-    {
+      },
+      {
         id: 2,
         name: 'Applied\nGeophysicist',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2043/Q76I6XXGNLR85331PB'
-    },
-    {
+      },
+      {
         id: 3,
         name: 'Geophysicist\n(Interpreter)',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2103/2ZSD4244VIBM9LPBZK'
-    },
-    {
+      },
+      {
         id: 4,
         name: 'Signal Processing\nEngineer',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2083/6SPI1CAZ1OXL2MMW4J'
-    },
-    {
+      },
+      {
         id: 5,
         name: 'Advanced Data\nScience',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2023/FPZ380T896T54I8HRR'
-    },
-    {
+      },
+      {
         id: 6,
         name: 'Applied\nGeologist',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-1983/7SXHYOXA3LNHX0UC2D'
-    },
-    {
+      },
+      {
         id: 7,
         name: 'Well\nPlanner',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2003/OP7Y138ZTQFFEVIB51'
-    }
+      }
     ];
 
     return { news, oil, rss, custom, careers };
