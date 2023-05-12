@@ -27,14 +27,6 @@
     text-align: left;
 }
 
-.vacancy:nth-child(6) h3 {
-    width: 180px;
-}
-
-.vacancy:last-child h3 {
-    width: 100px;
-}
-
 .vacancy h4 {
     font-weight: 500;
     font-size: 14px;
