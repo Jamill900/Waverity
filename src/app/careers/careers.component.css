@@ -25,6 +25,7 @@
     line-height: 30px;
     width: 200px;
     text-align: left;
+    min-height: 60px;
 }
 
 .vacancy h4 {
