@@ -178,6 +178,18 @@ export class InMemoryDataService implements InMemoryDbService {
         name: 'Signal Processing\nEngineer',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2083/6SPI1CAZ1OXL2MMW4J'
+      },
+      {
+        id: 8,
+        name: 'Projects’ Manager /\nCoordinator',
+        location: 'Baku, Azerbaijan',
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3244/1QNX0XETN9ZX8PE5J3'
+      },
+      {
+        id: 9,
+        name: 'Algorithm’s\nDeveloper',
+        location: 'Baku, Azerbaijan',
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3204/YYUDA6QOPEIW1M5GQE'
       }
     ];
 
