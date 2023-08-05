@@ -31,6 +31,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TabsModule } from 'ngx-tabset';
 import { NgxImageComparisonSliderModule } from 'ngx-image-comparison-slider';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { OilDetailsComponent } from './oil-details/oil-details.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     TechnologyComponent,
     OilComponent,
     RssComponent,
-    CustomComponent
+    CustomComponent,
+    OilDetailsComponent
   ],
   imports: [
     BrowserModule,

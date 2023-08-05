@@ -40,7 +40,7 @@ body {
 	overflow-x: hidden;
 }
 
-video {
+.video {
 	z-index: 0 !important;
 	object-fit: cover;
 	width: 100vw;

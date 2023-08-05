@@ -26,6 +26,7 @@
                         <div class="product">
                             <h2 class="animate__fadeInUp animate__animated">{{ data.title }}</h2>
                             <p class="animate__fadeInUp animate__animated">{{ data.info }}</p>
+                            <button class="animate__fadeInUp animate__animated" *ngIf="data.id == 1 || data.id == 2" routerLink="/solutions/oil-and-gas-solution/{{ data.id }}">Read More</button>
                         </div>
                     </div>
                 </ng-template>

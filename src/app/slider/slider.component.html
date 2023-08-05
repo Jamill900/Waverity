@@ -22,7 +22,11 @@
                       <p data-animation="fadeInLeft" data-delay=".9s">
                         {{item.info | slice:0:250}}...
                       </p>
-                      <a routerLink="/oil/{{ item.id }}" data-animation="fadeInUp" data-delay="1.1s"
+                      <a *ngIf="item.id == 1 || item.id == 2" routerLink="/solutions/oil-and-gas-solution/{{ item.id }}" data-animation="fadeInUp" data-delay="1.1s"
+                        class="main-btn rounded-btn icon-right small-size">
+                        Learn More
+                      </a>
+                      <a *ngIf="item.id != 1 && item.id != 2" routerLink="/solutions/oil-and-gas/{{ item.id }}" data-animation="fadeInUp" data-delay="1.1s"
                         class="main-btn rounded-btn icon-right small-size">
                         Learn More
                       </a>
@@ -34,7 +38,7 @@
           </div>
           <!-- Data -->
         </ngx-slick-carousel>
-        <button class="button" routerLink="/oil/1">Browse All</button>
+        <button class="button" routerLink="/solutions/oil-and-gas/1">Browse All</button>
       </ng-template>
     </ngx-tab>
     <ngx-tab tabTitle="Remote Sensing Systems" [bypassDOM]="true">
@@ -59,7 +63,7 @@
                       <p data-animation="fadeInLeft" data-delay=".9s">
                         {{item.info | slice:0:250}}...
                       </p>
-                      <a routerLink="/rss/{{ item.id }}" data-animation="fadeInUp" data-delay="1.1s"
+                      <a routerLink="/solutions/remote-sensing-systems/{{ item.id }}" data-animation="fadeInUp" data-delay="1.1s"
                         class="main-btn rounded-btn icon-right small-size">
                         Learn More
                       </a>
@@ -71,7 +75,7 @@
           </div>
           <!-- Data -->
         </ngx-slick-carousel>
-        <button class="button" routerLink="/rss/1">Browse All</button>
+        <button class="button" routerLink="/solutions/remote-sensing-systems/1">Browse All</button>
       </ng-template>
     </ngx-tab>
     <ngx-tab tabTitle="Custom Solutions" [bypassDOM]="true">
@@ -96,7 +100,7 @@
                       <p data-animation="fadeInLeft" data-delay=".9s">
                         {{item.info | slice:0:250}}...
                       </p>
-                      <a routerLink="/custom/{{ item.id }}" data-animation="fadeInUp" data-delay="1.1s"
+                      <a routerLink="/solutions/custom-solutions/{{ item.id }}" data-animation="fadeInUp" data-delay="1.1s"
                         class="main-btn rounded-btn icon-right small-size">
                         Learn More
                       </a>
@@ -108,7 +112,7 @@
           </div>
           <!-- Data -->
         </ngx-slick-carousel>
-        <button class="button" routerLink="/custom/1">Browse All</button>
+        <button class="button" routerLink="/solutions/custom-solutions/1">Browse All</button>
       </ng-template>
     </ngx-tab>
   </ngx-tabset>

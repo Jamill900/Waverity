@@ -8,6 +8,7 @@ import { NewsComponent } from './news/news.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OilDetailsComponent } from './oil-details/oil-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,10 +17,11 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'news/:id', component: NewsDetailsComponent },
-  { path: 'oil/:id', component: OilComponent },
-  { path: 'oil', component: OilComponent},
-  { path: 'rss/:id', component: RssComponent },
-  { path: 'custom/:id', component: CustomComponent }
+  { path: 'solutions/oil-and-gas/:id', component: OilComponent },
+  { path: 'solutions/oil-and-gas', component: OilComponent },
+  { path: 'solutions/remote-sensing-systems/:id', component: RssComponent },
+  { path: 'solutions/custom-solutions/:id', component: CustomComponent },
+  { path: 'solutions/oil-and-gas-solution/:id', component: OilDetailsComponent }
 ];
 
 @NgModule({
