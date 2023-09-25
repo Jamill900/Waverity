@@ -89,6 +89,15 @@ export class InMemoryDataService implements InMemoryDbService {
         cover: 'assets/images/oil5.gif',
         cover2: '',
         cover3: ''
+      },
+      {
+        id: 6,
+        button: 'Log Cube',
+        title: 'Log Cube: Log Scale Property Prediction from Seismic Reflectivity',
+        info: 'The availability of log data is paramount in shaping reservoir development strategies and enabling well-informed decision-making. A greater volume of accessible logs directly enhances our understanding of subsurface formations. However, it’s important to acknowledge that in practical scenarios, log values are not uniformly accessible at all points.',
+        cover: 'assets/images/log-cube.jpg',
+        cover2: 'assets/images/log2.jpg',
+        cover3: 'assets/images/log1.jpg'
       }
     ];
 
