@@ -98,6 +98,15 @@ export class InMemoryDataService implements InMemoryDbService {
         cover: 'assets/images/log-cube.jpg',
         cover2: 'assets/images/log2.jpg',
         cover3: 'assets/images/log1.jpg'
+      },
+      {
+        id: 7,
+        button: 'MOTIVO',
+        title: 'MOTIVO: Automatic Seismic Interpretation',
+        info: 'Seismic data conceals a wealth of information beyond initial appearances, and manual methods may not fully tap into its complete potential. Unlocking hidden insights in seismic data, MOTIVO introduces an automated interpretation stream that is set to transform data review procedures.',
+        cover: 'assets/images/motivo.jpg',
+        cover2: 'assets/images/motivo-left.jpg',
+        cover3: 'assets/images/motivo-right.jpg'
       }
     ];
 
