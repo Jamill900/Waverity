@@ -156,46 +156,10 @@ export class InMemoryDataService implements InMemoryDbService {
 
     let careers = [
       {
-        id: 1,
-        name: 'Senior Data\nScientist',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-2803/2JEQ5S2BWF8WG2SPGD'
-      },
-      {
         id: 2,
         name: 'Geophysicist\n(Interpreter)',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-2783/J3LGWHBCC3OFPAJZK8'
-      },
-      {
-        id: 3,
-        name: 'Geophysicist\n(Developer)',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-2763/9VFMXB3NZW2GT6IPE3'
-      },
-      {
-        id: 4,
-        name: 'Geologist',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-2823/SGARRV1ZPXXUUJWOQH'
-      },
-      {
-        id: 5,
-        name: 'Deep Learning\nEngineer',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-2023/FPZ380T896T54I8HRR'
-      },
-      {
-        id: 6,
-        name: 'Computational\nGeophysicist',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-2063/CHWZG24AES9N9RKYY2'
-      },
-      {
-        id: 7,
-        name: 'Signal Processing\nEngineer',
-        location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-2083/6SPI1CAZ1OXL2MMW4J'
       },
       {
         id: 8,
