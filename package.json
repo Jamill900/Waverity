@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -21,7 +21,7 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
-    "@nestjs-modules/mailer": "^1.6.1",
+    "@nestjs-modules/mailer": "^1.9.1",
     "@ng-bootstrap/ng-bootstrap": "^10.0.0",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "@types/jquery": "^3.5.14",

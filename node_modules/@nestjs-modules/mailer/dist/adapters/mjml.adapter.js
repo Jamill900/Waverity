@@ -4,7 +4,7 @@ exports.MjmlAdapter = void 0;
 const handlebars_adapter_1 = require("./handlebars.adapter");
 const ejs_adapter_1 = require("./ejs.adapter");
 const pug_adapter_1 = require("./pug.adapter");
-const mjml_1 = require("mjml");
+const mjml2html = require("mjml");
 class MjmlAdapter {
     constructor(engine, config, others) {
         this.engine = engine;
@@ -26,7 +26,7 @@ class MjmlAdapter {
     compile(mail, callback, mailerOptions) {
         var _a;
         (_a = this === null || this === void 0 ? void 0 : this.engine) === null || _a === void 0 ? void 0 : _a.compile(mail, () => {
-            mail.data.html = (0, mjml_1.default)(mail.data.html).html;
+            mail.data.html = mjml2html(mail.data.html).html;
             callback();
         }, mailerOptions);
     }
