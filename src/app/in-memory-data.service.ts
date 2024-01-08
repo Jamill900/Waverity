@@ -89,42 +89,42 @@ export class InMemoryDataService implements InMemoryDbService {
         cover: 'assets/images/news/6.jpg',
         title: 'Join WAVERITY’s Upcoming Webinar',
         info: 'Exciting News: Join WAVERITY’s Upcoming Webinar!\n\nWe’ve noticed your questions and the increasing interest in our expanding AI product portfolio, and we’re excited to announce that there’s an important update on the horizon!\n\nSave the Date:\n🗓️ Date: 7 November, 2023\n⏰ Time: 4 p.m. Baku time (UTC+04:00)\n\nEarly November we’ll be hosting a highly anticipated webinar where we’ll dive deep into WAVERITY’s products, real-world case examples, and the value we bring to the industry.\n\nHere’s what you can expect:\n- We’ll talk about our cutting-edge AI products and technologies covering post-processing and conventional processing stages of seismic data analysis.\n- Real-case examples showcasing tangible results.\n- You can meet our team of tech experts and geoscientists.\n- Ask burning questions about our methodology and outcomes.\n- Explore opportunities to join our exceptional team.\n\nMark your calendar, set your alarms, and be ready to join us! We considered also the importance of accommodating different time zones, ensuring that all industry professionals can participate.\n\nStay tuned, follow our page, there will be a reminder post! Don’t miss this opportunity to supercharge your knowledge and get to know WAVERITY!',
-        date: '18 November 2023'
+        date: '7 Octoober 2023'
       },
       {
         id: 5,
         cover: 'assets/images/news/5.jpg',
         title: 'WAVERITY visited ADIPEC 2023 in Abu Dhabi',
         info: 'Our Team Explores the Future of Energy at ADIPEC 2023.\n\nWe are excited to share a glimpse of our team’s participation at ADIPEC 2023 Exhibition and Conference, held in Abu Dhabi from October 2-5.\n\nWith the theme "Decarbonising. Faster. Together.", the event brought together more than 160,000 attendees, 1,500 speakers, and 2,200 exhibiting companies, including government ministers, CEOs, policymakers, industry experts, and innovators.\n\nTeam’s experience at ADIPEC 2023 reinforces our commitment to staying at the forefront of industry innovations, collaborating with global leaders, and contributing to the collective effort to provide cutting-edge and comprehensive solutions for the energy sector.\n\nStay tuned for more updates as we continue to drive innovation and sustainability in the energy sector.',
-        date: '18 November 2023'
+        date: '10 October 2023'
       },
       {
         id: 4,
         cover: 'assets/images/news/4.jpg',
         title: 'New Research Direction Announcement from WAVERITY!',
         info: 'Exciting New Research Direction Announcement from WAVERITY!\n\nAs our team is expanding, we’re pleased to announce a significant development in our research focus: the introduction of a new stream that’s set to integrate deep learning techniques into conventional seismic data processing.\n\nIntroducing "NeuroSeis": Non-Linear Signal Processing and Deep Learning-based Solutions.\n\nIn the field of seismic processing, innovation is the key to accuracy and efficiency. NeuroSeis brings a cutting-edge approach to seismic processing world, enhancing accuracy and computational performance across the entire workflow: first break picking, sorting, velocity analysis, denoising, demultiple, velocity model building, and more. We intend to work with both land and marine seismic data.\n\nMoving forward in this direction, we will be sharing progress with industry professionals and believe that collaborations will be an effective basis for growth. We are confident that "NeuroSeis" will bring valuable advancements to the geosciences industry and the way we process seismic data.\n\nStay tuned for more updates as we continue to shape the future of geoscience AI solutions.',
-        date: '18 November 2023'
+        date: '6 November 2023'
       },
       {
         id: 3,
         cover: 'assets/images/news/3.jpg',
         title: 'WAVERITY hosted a webinar on AI technologies in seismic data analysis',
         info: 'On November 7, 2023, WAVERITY hosted a webinar on AI technologies in seismic data analysis, featuring speakers Javidan Karimli and Hasan Asgarov. The event, conducted at 4 p.m. Baku time, spanned approximately 90 minutes and offered profound insights into the field.\n\nKey Aspects of the Webinar:\n\n- A detailed exploration of WAVERITY’s advanced AI products and technologies, particularly focusing on S.I.N.A., S.I.Q.E., and Log Cube algorithms.\n- Presentation of real-case examples to demonstrate the practical applications and results of these technologies.\n- Q&A segment for a deeper understanding of WAVERITY’s methodologies and achievements.\n- Discussion on opportunities for those interested in joining the WAVERITY team.\n\nWe extend our heartfelt thanks to all the participants for their presence and active engagement during the webinar. Your participation made the event a great success. We will be hosting another webinar in the near future and look forward to your continued participation. Stay tuned for more details!',
-        date: '18 November 2023'
+        date: '10 November 2023'
       },
       {
         id: 2,
         cover: 'assets/images/news/2.jpg',
         title: 'WAVERITY is preparing to participate in the 10th SPE Annual Caspian Technical Conference and Exhibition',
         info: 'WAVERITY is preparing to participate in the 10th SPE Annual Caspian Technical Conference and Exhibition, which will be held from November 21-23 in Baku. Our team plans to present several research papers:\n\nOrkhan Mammadov will discuss "Seismic Facies Clustering Via Spectral Decomposition Using Machine Learning," offering an exploration of new techniques in this area - 22 of November, at 12:00.\n\nJavidan Karimli’s contribution will be "Estimation of Gamma Ray Values With Deep Learning From Seismic," where he will examine the application of deep learning in interpreting geophysical data - 22 of November, at 17:00.\n\nWe hope to engage in meaningful conversations and share ideas at this event.\n\nLooking forward to the opportunity to connect with attendees.',
-        date: '18 November 2023'
+        date: '22 November 2023'
       },
       {
         id: 1,
         cover: 'assets/images/news/1.jpg',
         title: 'Orkhan Mammadov presented "Seismic Facies Clustering Via Spectral Decomposition Using Machine Learning» at SPE',
         info: 'At the recent 10th SPE Annual Caspian Technical Conference and Exhibition in Baku, Orkhan Mammadov, an employee of the WAVERITY presented a paper titled "Seismic Facies Clustering Via Spectral Decomposition Using Machine Learning."\n\nThis presentation, held on November 22nd, showcased innovative methods for enhancing seismic data analysis through the integration of spectral decomposition and machine learning.\n\nThe conference provided an excellent opportunity for WAVERITY to share our latest research and engage with industry experts. We are proud to contribute to the evolving field of geosciences and look forward to future events.',
-        date: '18 November 2023'
+        date: '6 December 2023'
       }
     ];
 
@@ -253,7 +253,7 @@ export class InMemoryDataService implements InMemoryDbService {
       },
       {
         id: 2,
-        name: 'Algorithm’s\nDeveloper',
+        name: 'Algorithm’s Developer\nfor Geophysical Products',
         location: 'Baku, Azerbaijan',
         link: 'https://forms.clickup.com/31136212/f/xp6em-3204/YYUDA6QOPEIW1M5GQE'
       }

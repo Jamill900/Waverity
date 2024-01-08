@@ -199,6 +199,7 @@ section {
 
 .section-head {
 	text-align: center;
+	z-index: 99 !important;
 }
 
 .section-head>.hr {
