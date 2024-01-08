@@ -255,7 +255,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 2,
         name: 'Algorithm’s Developer\nfor Geophysical Products',
         location: 'Baku, Azerbaijan',
-        link: 'https://forms.clickup.com/31136212/f/xp6em-3204/YYUDA6QOPEIW1M5GQE'
+        link: 'https://forms.clickup.com/31136212/f/xp6em-3307/M63OT65W62EK4RTEJS'
       }
     ];
 
