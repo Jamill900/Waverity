@@ -1,15 +1,18 @@
 footer {
   background: var(--white);
 }
+
 footer h6 {
   font-weight: 700;
   font-size: 16px;
 }
+
 footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 footer ul li {
   font-weight: 500;
   font-size: 12px;
@@ -17,59 +20,74 @@ footer ul li {
   padding-bottom: 10px;
   cursor: pointer;
 }
+
 footer .partnership {
   margin-top: 0px;
 }
+
 footer .partnership h4 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 10px;
   line-height: 21px;
-  color: var(--white);
-  padding: 15px 0;
-  padding-right: 10px;
+  letter-spacing: 1px;
+  color: var(--darkBlue);
+  padding: 15px 0 3px 0;
   margin: 0 !important;
 }
+
 footer .partnership img {
   cursor: pointer;
   filter: invert(1);
 }
+
 footer .breaking-line {
   height: 2px;
   background: #818181;
   opacity: 50%;
 }
+
 footer .text-right h5 {
   float: right;
 }
+
 footer .line-bottom {
   margin-top: 30px;
 }
+
 footer .copyright {
   padding: 20px 0;
 }
+
 footer .copyright h5 {
   font-size: 12px;
   color: #818181;
 }
+
 footer .copyright span {
   color: var(--blue);
 }
+
 .links li:hover {
   color: var(--blue);
 }
+
 @media (max-width: 991px) {
   .text-right h5 {
     float: none !important;
- }
-  .links, .contacts {
+  }
+
+  .links,
+  .contacts {
     margin: 20px 0;
- }
+  }
 }
+
 svg {
   fill: #818181;
   transition: all 0.2s linear;
 }
+
 svg:hover {
   fill: var(--blue) !important;
 }
