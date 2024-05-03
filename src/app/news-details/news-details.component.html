@@ -1,10 +1,78 @@
 <div class="main">
-    <div *ngIf="news" class="container news">
-        <div id="news">
-            <img [src]="news.cover" width="auto" class="animate__fadeInUp animate__animated">
-            <span class="animate__fadeInUp animate__animated"><br>{{ news.date }}</span>
-            <h2 class="animate__fadeInUp animate__animated">{{ news.title }}</h2>
-            <p class="animate__fadeInUp animate__animated">{{ news.info }}</p>
-        </div>
+  <div *ngIf="news" class="container news">
+    <div *ngIf="news.id != 0" id="news">
+      <img
+        [src]="news.cover"
+        width="auto"
+        class="animate__fadeInUp animate__animated"
+      />
+      <span class="animate__fadeInUp animate__animated"
+        ><br />{{ news.date }}</span
+      >
+      <h2 class="animate__fadeInUp animate__animated">{{ news.title }}</h2>
+      <p class="animate__fadeInUp animate__animated">{{ news.info }}</p>
     </div>
+
+    <div *ngIf="news.id == 0" id="news" class="mb-5">
+      <span class="animate__fadeInUp animate__animated"
+        ><br />{{ news.date }}</span
+      >
+      <h2 class="animate__fadeInUp animate__animated">{{ news.title }}</h2>
+      <div class="row">
+        <p class="col-12 animate__fadeInUp animate__animated">
+          A year ago, WAVERITY launched an ambitious so-called NEUROSEIS stream
+          to develop techniques for raw seismic data processing. The aim of
+          NEUROSEIS is to accelerate processing time and improve accuracy of
+          results compared to conventional approaches. Our strategic goal is to
+          integrate fundamental principles of seismic data processing with
+          hybrid deep neural network architectures along with methods of
+          nonlinear processing techniques.
+        </p>
+        <img
+          class="col-12 animate__fadeInUp animate__animated"
+          src="assets/images/news0_1.jpg"
+          width="100%"
+          alt=""
+        />
+        <p class="col-12 animate__fadeInUp animate__animated">
+          In the first place, we have developed a methodology for Automatic
+          First Break Picking (FBP).
+          <br /><br />
+          In geophysics, FBP is the process of identifying the first arrival
+          signals within seismic traces. These signals are mainly associated
+          with the energy of refracted waves at the base of the weathering layer
+          or the direct wave traveling from the source to the receiver. The
+          creation of a reliable and automated FBP algorithm is strongly needed,
+          particularly when manual FBP struggles to efficiently handle large and
+          low-quality datasets.
+          <br /><br />
+          There are several well-known approaches to solve FBP. For example,
+          Short-Term Average over Long-Term Average (STA/LTA) algorithm shows
+          acceptable results, however, the STA/LTA and similar energy
+          ratio-based methods are unstable for data with low signal-to-noise
+          ratio (SNR) and require manual adjustment and conditioning, which is a
+          time-consuming and resource-intensive process.
+          <br /><br />
+          To address these limitations, we propose an advanced automatic FBP
+          solution using deep neural network architecture. The model is trained
+          on synthetic seismic data specifically designed to mimic target raw
+          data. This step can be easily implemented with minimal
+          parameterization and without understanding of the data specifics,
+          which eliminates the need for manual efforts. First breaks can be
+          obtained with high accuracy and efficiently by applying the trained
+          model to entire seismic gathers.
+          <br /><br />
+          Initial results are indicating significant potential for improving FBP
+          accuracy and processing speed. The model demonstrates robustness to
+          low SNR data, outliers handling, and adaptability to various first
+          break curve behaviors. These advantages make our deep learning-driven
+          FBP solution a valuable method for the seismic data processing cycle.
+        </p>
+        <img class="col-12 col-md-6 col-lg-3" src="assets/images/n1.png" alt="">
+        <img class="col-12 col-md-6 col-lg-3" src="assets/images/n2.png" alt="">
+        <img class="col-12 col-md-6 col-lg-3" src="assets/images/n3.png" alt="">
+        <img class="col-12 col-md-6 col-lg-3" src="assets/images/n4.png" alt="">
+      </div>
+    </div>
+  </div>
 </div>

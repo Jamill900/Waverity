@@ -125,6 +125,13 @@ export class InMemoryDataService implements InMemoryDbService {
         title: 'Orkhan Mammadov presented "Seismic Facies Clustering Via Spectral Decomposition Using Machine Learning» at SPE',
         info: 'At the recent 10th SPE Annual Caspian Technical Conference and Exhibition in Baku, Orkhan Mammadov, an employee of the WAVERITY presented a paper titled "Seismic Facies Clustering Via Spectral Decomposition Using Machine Learning."\n\nThis presentation, held on November 22nd, showcased innovative methods for enhancing seismic data analysis through the integration of spectral decomposition and machine learning.\n\nThe conference provided an excellent opportunity for WAVERITY to share our latest research and engage with industry experts. We are proud to contribute to the evolving field of geosciences and look forward to future events.',
         date: '6 December 2023'
+      },
+      {
+        id: 0,
+        cover: 'assets/images/news_19.png',
+        title: 'First Product of Raw Seismic Data Processing within NeuroSeis stream: Automatic First Break Picking (FBP)',
+        info: 'At the initiative of the bp AGT Innovation team, over the past 11 months, we have been working in collaboration with bp AGT specialists to develop a new method that enables significantly improved vertical resolution while broadening seismic data bandwidth.\n\n Integration of advanced AI algorithms with signal processing allowed us to mitigate one of the main shortcomings of conventional approaches, as deep learning-based S.I.Q.E. does not require the availability of well data or any prior geological interpretation.\n\n As the result of S.I.Q.E. seismic data enhancement, specialists are able to better comprehend and mitigate their risks during the major well planning activities throughout the different stages of the field development, starting from exploration to depletion.',
+        date: '3 May 2024'
       }
     ];
 
