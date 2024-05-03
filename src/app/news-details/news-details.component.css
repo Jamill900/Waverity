@@ -2,9 +2,16 @@
     margin-top: 150px;
 }
 
-img {
+img.basic {
+    float: right;
+    width: 500px;
+    margin-left: 60px;
     margin-bottom: 20px;
     border-radius: 3px 15px;
+}
+
+img {
+    margin-bottom: 20px;
 }
 
 h2 {
